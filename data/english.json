@@ -1,0 +1,385 @@
+{
+  "firstName": "Amine",
+  "lastName": "BEN HAMMOU",
+  "address": "CERN Hostel 41, Ch15, CH-1211 Geneva 23",
+  "country": "Switzerland",
+  "phone": "(+33) 667 470 394",
+  "email": "benhammouamin@gmail.com",
+  "summary": "I am a computer science engineering student, having four years of higher education in this field and having accomplished some small projects and freelance work, I have now a good experience in analysis and programming of applications. I like solving complicated problems and programming challenges.",
+  "rankings": [
+    {
+      "name": "CodinGame",
+      "rank": "836 / 150707"
+    },
+    {
+      "name": "StackOverflow",
+      "rank": "1107"
+    },
+    {
+      "name": "ACM MCPC 2012",
+      "rank": "6 / 12"
+    },
+    {
+      "name": "Google CodeJam",
+      "rank": "Round 1"
+    }
+  ],
+  "programmingLangs": [
+    {
+      "name": "C/C++",
+      "level": 5,
+      "tools": [
+        {
+          "name": "Qt/QML",
+          "level": 5
+        },
+        {
+          "name": "Boost",
+          "level": 4
+        },
+        {
+          "name": "Gtest",
+          "level": 4
+        },
+        {
+          "name": "SDL",
+          "level": 4,
+          "hidden": true
+        },
+        {
+          "name": "OpenGL",
+          "level": 3,
+          "hidden": true
+        }
+      ]
+    },
+    {
+      "name": "PHP5",
+      "level": 5,
+      "tools": [
+        {
+          "name": "Laravel 4",
+          "level": 5
+        },
+        {
+          "name": "Silex",
+          "level": 5
+        },
+        {
+          "name": "PHPUnit",
+          "level": 4
+        },
+        {
+          "name": "Symfony2",
+          "level": 4,
+          "hidden": true
+        },
+        {
+          "name": "CakePHP",
+          "level": 3,
+          "hidden": true
+        },
+        {
+          "name": "Console",
+          "level": 5,
+          "hidden": true
+        }
+      ]
+    },
+    {
+      "name": "Javascript",
+      "level": 4,
+      "tools": [
+        {
+          "name": "AngularJS",
+          "level": 5
+        },
+        {
+          "name": "jQuery",
+          "level": 5
+        },
+        {
+          "name": "Canvas",
+          "level": 4,
+          "hidden": true
+        },
+        {
+          "name": "NodeJs",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "name": "HTML5/CSS3",
+      "level": 5,
+      "tools": [
+        {
+          "name": "Jade",
+          "level": 5,
+          "hidden": true
+        },
+        {
+          "name": "Sass/Less",
+          "level": 5,
+          "hidden": true
+        },
+        {
+          "name": "Gulp/Grunt",
+          "level": 4
+        }
+      ]
+    },
+    {
+      "name": "SQL",
+      "level": 5,
+      "tools": [
+        {
+          "name": "MySQL",
+          "level": 5
+        },
+        {
+          "name": "Oracle",
+          "level": 4
+        }
+      ]
+    },
+    {
+      "name": "Java",
+      "level": 5,
+      "tools": [
+        {
+          "name": "Android",
+          "level": 4
+        },
+        {
+          "name": "JUnit",
+          "level": 4
+        },
+        {
+          "name": "Swing",
+          "level": 4,
+          "hidden": true
+        }
+      ]
+    },
+    {
+      "name": "Git",
+      "level": 4,
+      "tools": []
+    },
+    {
+      "name": "Python",
+      "level": 3,
+      "tools": []
+    },
+    {
+      "name": "Puppet",
+      "level": 3,
+      "tools": []
+    }
+  ],
+  "langs": [
+    {
+      "name": "Arabic",
+      "level": 5
+    },
+    {
+      "name": "French",
+      "level": 4
+    },
+    {
+      "name": "English",
+      "level": 4
+    }
+  ],
+  "education": [
+    {
+      "periode": "2013 - Now",
+      "name": "Institut Supérieure d’Informatique, de Modélisation et de leurs Applications",
+      "location": "Clermont-Ferrand",
+      "description": "Dual-Diploma programme with ISIMA, College of Engineering in Computer Science, Modelling and Applications delivering a diploma equivalent to a Master's Degree in Engineering. Studying Software Engineering and Information Systems"
+    },
+    {
+      "periode": "2011 - 2013",
+      "name": "École Nationale Supérieure d’Informatique et Analyse des Systèmes",
+      "location": "Rabat, Morocco",
+      "description": "College of Engineering in Computer Science and Systems Analysis delivering a diploma equivalent to a Master's Degree in Engineering"
+    },
+    {
+      "periode": "2009 - 2011",
+      "name": "Classes préparatoires aux grandes écoles d'ingénieur",
+      "location": "Errachidia, Morocco",
+      "description": "Preparatory classes for competitive examination admission to an engineering school"
+    },
+    {
+      "periode": "2009",
+      "name": "Moulay Rachid high school: Baccalaureat of mathematical sciences",
+      "location": "Arfoud, Morocco",
+      "description": "Equivalent to a High School Leaving Certificate"
+    }
+  ],
+  "skills": [
+    {
+      "description": "Algorithms design and optimization",
+      "tags": []
+    },
+    {
+      "description": "2D games development",
+      "tags": ["C/C++", "Javascript"],
+      "hidden": true
+    },
+    {
+      "description": "Desktop applications design and development",
+      "tags": ["C++", "QML/Javascript", "Java"]
+    },
+    {
+      "description": "Relational databases design and management",
+      "tags": ["MySQL", "Oracle"]
+    },
+    {
+      "description": "Mobile applications design and development",
+      "tags": ["Android"],
+      "hidden": true
+    },
+    {
+      "description": "Processing languages, simulation and meta programming",
+      "tags": []
+    },
+    {
+      "description": "Web applications design and development",
+      "tags": ["PHP5", "Javascript", "HTML5/CSS3"]
+    }
+  ],
+  "jobs": [
+    {
+      "periode": "Apr - Sep 2015",
+      "title": "Creation of modular client web application for analysis using AngularJS",
+      "society": "CERN",
+      "location": "Meyrin, Suisse",
+      "description": "Making a client application which will consume a REST webservice and display different types of charts to users. The application should be flexible and give the ability to add new modules easily without changing its core.",
+      "tools": ["AngularJS", "Gulp", "npm", "Bower", "Jade", "Less"]
+    },
+    {
+      "periode": "Apr - Aug 2014",
+      "title": "Comparative study and validation of test automation tools",
+      "society": "Atos Integration",
+      "location": "Clermont-Ferrand, France",
+      "description": "Comparing free and paid testing tools present on the market to select the best tools for functional testing, load testing and manual testing",
+      "tools": ["Selenium2", "JMeter", "Squash TM"]
+    },
+    {
+      "periode": "Jul - Aug 2013",
+      "title": "Development of web application for school",
+      "society": "ENSIAS",
+      "location": "Rabat, Morocco",
+      "description": "Worked with three other students to build a complete management application based on the web handling students registration, plainning, projects, internships and marks. Teachers can share their lectures with students and manage projects. Features for administration are included too",
+      "tools": ["Laravel 3", "jQuery", "Bootstrap", "Git"]
+    },
+    {
+      "periode": "Jul - Aug 2012",
+      "title": "Development of hotel web management application",
+      "society": "Hôtel El Ati",
+      "location": "Arfoud, Morocco",
+      "description": "A web application including presentation pages of the hotel, different rooms and restaurant types, and other services, online booking and feedback systems. It includes an administrator control panel to manage reservations, rooms, clients and all settings",
+      "tools": ["CakePHP", "jQuery", "Google Maps API"],
+      "hidden": true
+    }
+  ],
+  "projects": [
+    {
+      "time": "May 2015",
+      "title": "Be-responsive jQuery plugin",
+      "tags": "personal",
+      "link": "https://github.com/webNeat/be-responsive",
+      "description": "Responsive table jQuery plugin by transforming each row into a table like style using CSS",
+      "tools": ["jQuery", "CSS", "Bower", "Sublime Text 3"],
+      "hidden": true
+    },
+    {
+      "time": "May 2015",
+      "title": "Smart Pieces",
+      "tags": "personal",
+      "link": "https://github.com/webNeat/smart-pieces",
+      "description": "Simple framework to build smart pieces of code and generate them from the command line. With a plugin for Sublime Text 3 to insert snippets while typping code.",
+      "tools": ["PHP", "Python", "Twig", "Sublime Text 3"]
+    },
+    {
+      "time": "Mar 2015",
+      "title": "RSS Reader",
+      "tags": "academic",
+      "link": "https://github.com/webNeat/rss-reader",
+      "description": "Web application giving the possibility to subscribe to RSS and Atom channels and receive new feeds. The ORM layer was made from scratch and Silex framework was used to handle requests as a REST API. Unit and functional tests are included",
+      "tools": ["PHP", "Sliex", "PHPUnit", "Behat", "jQuery", "Sublime Text 3"],
+      "hidden": true
+    },
+    {
+      "time": "Feb 2015",
+      "title": "Fuzzy logic application",
+      "tags": "academic",
+      "description": "Desktop application to aggregate and calculate indicators using fuzzy logic.",
+      "tools": ["C++", "Qt/QML", "Javascript", "Sublime Text 3"]
+    },
+    {
+      "time": "Feb 2015",
+      "title": "Basic EJB container",
+      "tags": "academic",
+      "description": "Simple EJB container made from scratch handeling Stateless and Statefull EJBs lifecycle, injecting EntityManager and handeling transactions. Unit tests are made for every feature.",
+      "tools": ["Java", "JUnit", "Eclipse"],
+      "hidden": true
+    },
+    {
+      "time": "Jul 2014",
+      "title": "Collect module for Puppet",
+      "tags": "personal",
+      "description": "This module constructs files from multiple fragments in an ordered way. It doesn't require additional space to save temporary fragments and doesn't depend on any other module.",
+      "tools": ["Puppet", "Ruby", "Sublime Text 3"],
+      "hidden": true
+    },
+    {
+      "time": "May 2014",
+      "title": "Class Code Generator",
+      "tags": "personal",
+      "description": "A simple command line application which is able to generate basic code (constructors, getters, setters ...) for any OOP programming language. It's actually able to generate C++ and Java code based on customizable templates for code style.",
+      "tools": ["PHP5", "Twig", "Sublime Text 3"]
+    },
+    {
+      "time": "Mar 2014",
+      "tags": "academic",
+      "link": "https://github.com/webNeat/SMA",
+      "title": "Simulation of competition between students and laureates for internships and jobs",
+      "description": "The core of the simulation program is build in C++ to insure performance and we made a web UI to be cross platform. The core and the UI communicate via Sockets.",
+      "tools": ["C++", "PHP", "Sockets", "jQuery", "Bootstrap", "JSON", "Sublime Text 3"]
+    },
+    {
+      "time": "May 2013",
+      "title": "Employer management application",
+      "tags": "academic",
+      "description": "A simple employer management Java application with graphic interface, images and basic add, view, edit and delete features using a binary file as database.",
+      "tools": ["Java", "Swing", "Eclipse"],
+      "hidden": true
+    },
+    {
+      "time": "Mar 2013",
+      "title": "Mini Java compiler",
+      "tags": "academic",
+      "description": "A mini complier of Java code source using a simple interpreter instead of JVM written in C.",
+      "tools": []
+    },
+    {
+      "time": "Mar 2012",
+      "title": "Isola 2D board game",
+      "tags": "academic",
+      "link": "https://github.com/webNeat/isola",
+      "description": "A two-player abstract strategy board game. Each player moves their piece and removes one square from the board. The first player who can’t move loses.",
+      "tools": ["C", "SDL", "GCC", "Sublime Text 2", "Photoshop"],
+      "hidden": true
+    }
+  ],
+  "interests": [
+    "Programming and algorithmic challenges and puzzles",
+    "Making programming workflow tools",
+    "Video games",
+    "Literary writings in Arabic",
+    "Watching Animes / Reading Manga"
+  ]
+}

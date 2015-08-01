@@ -1,0 +1,123 @@
+doctype html
+html(moznomarginboxes)
+  head
+    title Amine Ben hammou - Resume
+    meta(charset="utf-8")
+    link(rel="stylesheet", href="css/vendors.css", media="all")
+    link(rel="stylesheet", href="css/style.css", media="all")
+  body(data-ng-app="resume", ng-controller="ResumeController")
+    .page
+
+      h1.title Amine Ben hammou
+
+      h1.summary(ng-show="i.summary").
+        {{ i.summary }}
+      .triangle
+
+      .left-column
+        p 
+          span.fa.fa-map-marker 
+          | {{ i.address }}
+        p {{ i.country }}
+        p
+          span.fa.fa-phone 
+          | {{ i.phone }}
+        p 
+          span.fa.fa-envelope 
+          span.small {{ i.email }}
+
+        h1 Reputation / Rankings
+        .triangle
+        .clear
+        p.small-padding.top-unmarged
+          span(ng-repeat="e in i.rankings")
+            span.block.width-60 {{ e.name }}
+            span.block.width-40 {{ e.rank }}
+
+        h1 Programming languages
+        .triangle
+        .clear
+        ul.top-unmarged
+          li(ng-repeat="e in i.programmingLangs", ng-hide="e.hidden")
+            span.block.width-50 {{ e.name }}
+            span.block.width-50
+              .progress-bar
+                div(ng-class="'progress-' + e.level")
+            ul
+              li(ng-repeat="se in e.tools", ng-hide="se.hidden")
+                span.block.width-50 {{ se.name }}
+                span.block.width-50
+                  .progress-bar
+                    div(ng-class="'progress-' + se.level")
+        h1 Langues
+        .triangle
+        .clear
+        ul.top-unmarged
+          li(ng-repeat="e in i.langs", ng-hide="e.hidden")
+            span.block.width-50 {{ e.name }}
+            span.block.width-50
+              .progress-bar
+                div(ng-class="'progress-' + e.level")
+
+      .right-column
+        h1 Education
+        .triangle
+        .clear
+        .list
+          section(ng-repeat="e in i.education")
+            span.bold {{ e.periode }}: 
+            span.title {{ e.name }}
+            span.fa
+            span.tag {{ e.location }}
+            p {{ e.description }}
+
+        h1 Skills
+        .triangle
+        .clear
+        ul(style="margin-top: -0.3cm")
+          li(ng-repeat="e in i.skills", ng-hide="e.hidden")
+            span.title {{ e.description }}
+
+        h1.no-top-margin Interests
+        .triangle
+        .clear
+        .list.top-unmarged
+          section.small-padding
+            span.title(ng-repeat="t in i.interests") 
+              | {{ t }}
+              br
+
+    .page
+      .one-column
+        h1.top-marged Work Experience
+        .triangle
+        .clear
+        .list.top-unmarged
+          section(ng-repeat="e in i.jobs", ng-hide="e.hidden")
+            span.bold {{ e.periode }}: 
+            span.title {{ e.title }}
+            span.fa
+            span.bold at {{ e.society }}
+            span.fa
+            span.tag {{ e.location }}
+            p {{ e.description }}
+            span.tag(ng-repeat="t in e.tools") {{ t }}
+
+        h1 Projects
+        .triangle
+        .clear
+        .list.top-unmarged
+          section(ng-repeat="e in i.projects", ng-hide="e.hidden")
+            span.bold {{ e.time }}: 
+            span.title {{ e.title }}
+            span.fa
+            span.tag {{ e.tags }}
+            span.tag(ng-show="e.link") {{ e.link }}
+            p {{ e.description }}
+            span.block(ng-repeat="t in e.tools") 
+              span.tag {{ t }}
+        .clear
+
+    script(src="js/vendors.js")
+    script(src="js/main.js")
+    
