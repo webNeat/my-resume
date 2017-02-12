@@ -14,7 +14,7 @@ gulp.task('build', ['vendors', 'core']);
 gulp.task('serve', function(){
     return connect.server({
         root: 'build',
-        port: 8100,
+        port: 3000,
         livereload: true
     });
 });

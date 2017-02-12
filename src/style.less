@@ -33,15 +33,15 @@
 .width-90 { width: 90%; }
 
 .bordered {
-    border: 2px solid @lgrey;
+    border: 1px solid @grey;
 }
 
 .right-bordered {
-    border-right: 2px solid @lgrey;
+    border-right: 1px solid @grey;
 }
 
 .left-bordered {
-    border-left: 2px solid @lgrey;
+    border-left: 1px solid @grey;
 }
 
 .block {
@@ -142,7 +142,7 @@ span.title {
     }
 
     .list > section {
-        border-bottom: 2px solid @lgrey;
+        border-bottom: 1px solid @lgrey;
         padding: 0.4cm;
         p {
             padding-top: 0.2cm;
@@ -177,11 +177,8 @@ span.title {
     padding-top: 0.5cm;
 
     .list > section {
-        border-bottom: 2px solid @lgrey;
+        border-bottom: 1px solid @lgrey;
         padding: 0.1cm;
-        p {
-            padding-top: 0.1cm;
-        }
         .fa {
             margin-left: 0.2cm;
         }
@@ -192,7 +189,8 @@ span.title {
     }
 
     .tag {
-        margin-top: 0.2cm;
+        margin-top: 0.1cm;
+        margin-bottom: 0.2cm;
     }
 }
 
@@ -215,8 +213,9 @@ h1.summary {
     background: white;
     color: black;
     .bordered;
-    text-align: justify;
+    text-align: center;
     margin-left: 0cm;
+    font-size: 20pt;
 }
 
 h1.title {
@@ -261,14 +260,14 @@ ul {
     margin: 0cm;
     padding: 0cm;
     li {
-        border-bottom: 2px solid @lgrey;
+        border-bottom: 1px solid @lgrey;
         padding: 0cm;
         margin: 0cm;
 
         ul {
             margin-left: 0.5cm;
             padding-left: 0.3cm;
-            border-left: 2px solid @lgrey;
+            border-left: 1px solid @lgrey;
 
             li {
                 border: none;
@@ -278,7 +277,7 @@ ul {
 }
 
 .progress-bar {
-    background: @grey;
+    background: @lgrey;
     border-radius: 0.1cm;
     height: 0.2cm;
     margin: 0px 0.2cm 2px 0cm;
@@ -304,18 +303,18 @@ ul {
     .progress-3 {
         .progress;
         .width-60;
-        background: @dgrey;
+        background: @yellow;
     }
 
     .progress-4 {
         .progress;
         .width-80;
-        background: @dgrey;
+        background: @green;
     }
 
     .progress-5 {
         .progress;
         width: 95%;
-        background: @dgrey;
+        background: @blue;
     }
 }

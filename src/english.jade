@@ -64,32 +64,14 @@ html(moznomarginboxes)
         .triangle
         .clear
         .list
-          section(ng-repeat="e in i.education")
+          section(ng-repeat="e in i.education", ng-hide="e.hidden")
             span.bold {{ e.periode }}: 
             span.title {{ e.name }}
             span.fa
             span.tag {{ e.location }}
             p {{ e.description }}
 
-        h1 Skills
-        .triangle
-        .clear
-        ul(style="margin-top: -0.3cm")
-          li(ng-repeat="e in i.skills", ng-hide="e.hidden")
-            span.title {{ e.description }}
-
-        h1.no-top-margin Interests
-        .triangle
-        .clear
-        .list.top-unmarged
-          section.small-padding
-            span.title(ng-repeat="t in i.interests") 
-              | {{ t }}
-              br
-
-    .page
-      .one-column
-        h1.top-marged Work Experience
+        h1 Work Experience
         .triangle
         .clear
         .list.top-unmarged
@@ -102,6 +84,19 @@ html(moznomarginboxes)
             span.tag {{ e.location }}
             p {{ e.description }}
             span.tag(ng-repeat="t in e.tools") {{ t }}
+
+    .page
+      .one-column
+        h1.top-marged Skills
+        .triangle
+        .clear
+        ul(style="margin-top: -0.3cm")
+          li(ng-repeat="e in i.skills", ng-hide="e.hidden")
+            span.title {{ e.description }}
+            br
+            span.block(ng-repeat="t in e.tags") 
+              span.tag {{ t }}
+            .clear
 
         h1 Projects
         .triangle
@@ -117,6 +112,13 @@ html(moznomarginboxes)
             span.block(ng-repeat="t in e.tools") 
               span.tag {{ t }}
         .clear
+        h1.no-top-margin Interests
+        .triangle
+        .clear
+        .list.top-unmarged
+          section.small-padding
+            span.title(ng-repeat="t in i.interests") 
+              span.tag {{ t }}
 
     script(src="js/vendors.js")
     script(src="js/main.js")
