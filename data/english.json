@@ -5,7 +5,7 @@
   "country": "06600 Antibes, France",
   "phone": "(+33) 755 183 470",
   "email": "benhammouamin@gmail.com",
-  "summary": "I like to analyze and solve challenging problems by designing efficient algorithms and writing high quality code.",
+  "summary": "Yohohoohoh.",
   "rankings": [
     {
       "name": "CodinGame",
@@ -396,7 +396,7 @@
       "link": "https://github.com/webNeat/rss-reader",
       "description": "Web application giving the possibility to subscribe to RSS and Atom channels and receive new feeds. The ORM layer was made from scratch and Silex framework was used to handle requests as a REST API. Unit and functional tests are included",
       "tools": ["PHP", "Sliex", "PHPUnit", "Behat", "jQuery", "Sublime Text 3"],
-      "hidden": true
+      "hidden": false
     },
     {
       "time": "Feb 2015",
