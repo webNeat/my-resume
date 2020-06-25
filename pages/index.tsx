@@ -5,151 +5,110 @@ export default function Home() {
   return (
     <>
       <div className="page mx-auto bg-white flex text-md leading-normal">
-        <div className="w-1/4 text-sm text-center bg-gray-100 p-4">
+        <div className=" w-1/3 text-sm text-center bg-gray-100 p-4">
           <img
-            src="/profile.jpeg"
-            alt="Amine Ben hammou"
+            src="/houda.png"
+            alt="Houda Benhammou"
             className="inline-block rounded-full w-32 mb-3 shadow-md border-4 border-white"
           />
-          <PersonalInfo icon="fas fa-user-tie"> 30 ans, célibataire </PersonalInfo>
+          <PersonalInfo icon="fas fa-birthday-cake"> 12/10/1994 </PersonalInfo>
           <PersonalInfo icon="fas fa-map-marker-alt">
-            64 rue de Migneaux
-            <br />
-            <span className="inline-block w-4"></span> 78300 Poissy
+            Av Al Maghreb Al Arabi, résidence Perle de la médina, Appart E29
+            <br /> Ocean, Rabat
           </PersonalInfo>
-          <PersonalInfo icon="fas fa-phone-alt">(+33) 7 55 18 34 70</PersonalInfo>
-          <PersonalInfo icon="fas fa-at">webneat@gmail.com</PersonalInfo>
-          <PersonalInfo icon="fab fa-github">github.com/webneat</PersonalInfo>
-
-          <SideTitle>Classements</SideTitle>
-          <Rank name="CodinGame" rank="Top 2%" />
-          <Rank name="Stackoverflow" rank="2239" />
-          <Rank name="CodeJam" rank="Round 1" />
-
-          <SideTitle>Langages & Outils</SideTitle>
-          <Tool name="Typescript" level={5} />
-          <Tool child name="React" level={5} />
-          <Tool child name="Redux" level={5} />
-          <Tool child name="MobX" level={5} />
-          <Tool name="NodeJS" level={5} />
-          <Tool child name="Express" level={5} />
-          <Tool child name="Adonis" level={5} />
-          <Tool child name="Nest" level={3} />
-          <Tool name="PHP" level={5} />
-          <Tool child name="Laravel" level={5} />
-          <Tool child name="Symfony" level={4} />
-          <Tool name="SQL" level={5} />
-          <Tool name="NoSQL" level={4} />
-          <Tool name="Git" level={5} />
-          <Tool name="Docker" level={4} />
-          <Tool name="Nginx" level={4} />
+          <PersonalInfo icon="fas fa-phone-alt">0653742611</PersonalInfo>
+          <PersonalInfo icon="fas fa-at">mynameshouda@gmail.com</PersonalInfo>
 
           <SideTitle>Langues</SideTitle>
           <Tool name="Arabe" level={5} />
           <Tool name="Français" level={4} />
           <Tool name="Anglais" level={4} />
+
+          <SideTitle>Centre d'interets</SideTitle>
+          <p>Photographie</p>
+          <br />
+          <p>Design graphique</p>
+          <br />
+          <p>Dessin à la main</p>
+          <br />
+          <p>Sport</p>
         </div>
 
-        <div className="w-3/4 flex-grow border-l p-3">
-          <h1 className="text-2xl text-center">Amine Ben hammou</h1>
-          <h1 className="mt-2 text-lg text-center">
-            J'aime résoudre des problèmes difficiles en implémentant des algorithmes efficaces avec
-            du code bien organisé.
-          </h1>
+        <div className="w-2/3 flex-grow border-l p-3">
+          <h1 className="text-2xl text-center">Houda BENHAMMOU</h1>
 
-          <Title>Education</Title>
+          <Title>Formation</Title>
           <School
-            date="2013 - 2015"
-            location="Clermont-Ferrand, France"
-            name="Institut Supérieure d’Informatique, de Modélisation et de leurs Applications"
-            diploma="Ingénieur en Génie Logiciel et Systèmes Informatiques"
+            date="2019"
+            location="Rabat"
+            name="ARTCOM SUP école de design"
+            diploma="Préparation d'un diplome en design graphique"
+          />
+          <School
+            date="2016 - 2018"
+            location="Arfoud"
+            name="Institut Spécialisé de Technologie Appliquée"
+            diploma="Technicien Spécialisé en Gestion des Entreprises"
+          />
+          <School
+            date="2014 - 2016"
+            location="Arfoud"
+            name="Institut Spécialisé de Technologie Appliquée"
+            diploma="Technicien Comptable des Entreprises"
+          />
+          <School
+            date="2013 - 2014"
+            location="Meknès"
+            name="Université Moulay Ismail"
+            diploma="Faculté des sciences juridiques, économiques et sociales"
           />
           <School
             last
-            date="2011 - 2013"
-            location="Rabat, Maroc"
-            name="Ecole Nationale Supérieure d’Informatique et Analyse des Systèmes"
-            diploma="Ingénieur en Génie Logiciel"
+            date="2013"
+            location="Arfoud"
+            name="Lycée Moulay Rachid"
+            diploma="Baccalauréat en sciences mathématiques, branche A"
           />
 
           <Title>Expériences Professionelles</Title>
           <Job
-            date="July 2017"
-            location="Remote"
-            company="MailPoet"
-            logo="/logos/mailpoet.png"
-            description={
-              <ul>
-                <li className="mb-2">
-                  - Travail dans une équipe internationale remote avec des méthodologies agiles.
-                </li>
-                <li className="mb-2">
-                  - Dévelopement et maintenace du plugin open source MailPoet et des autres projets
-                  de l'entreprise, avec collaboration et code review sur Github.
-                </li>
-                <li className="mb-2">
-                  - Support du plugin et résolution des problèmes techniques des utilisateurs.
-                </li>
-                <li className="mb-2">
-                  - Migration du code vers les nouvelles technologies (Typescript, React Hooks,
-                  Redux, Doctrine, ...).
-                </li>
-                <li className="mb-2">
-                  - Résolution des problèmes de performance avec optimisation du code et des
-                  requêtes de base de données.
-                </li>
-                <li className="mb-2">
-                  - Implémentation de nouvelles interface web avec Typescript, React et Sass.
-                </li>
-              </ul>
-            }
-            tools={['Typescript', 'React', 'Redux', 'NodeJS', 'WordPress', 'Kanban', 'OKR']}
-          />
-          <Job
-            date="Oct 2015 - Jun 2017"
-            location="Sophia Antipolis, France"
-            company="Amadeus"
-            logo="/logos/amadeus.png"
-            position="Software Engineer"
-            description="Maintenance de plusieurs applications en utilisant C++, Java, Python et Javascript, en agile Scrum / Kanban."
-            tools={['C++', 'JavaEE', 'Javascript', 'Python', 'Git', 'Scrum', 'Kanban']}
+            date="Février 2018"
+            location="Arfoud"
+            company="Cabinet de comptabilité"
+            description="Organisation et traitement des opérations comptables au sein du cabinet."
           />
           <Job
             last
-            date="Apr - Sep 2015"
-            location="Meyrin, Suisse"
-            company="CERN"
-            logo="https://framework.web.cern.ch/framework/1.0/img/logo/badge_80.png"
-            description="Création d'une application web modulaire pour analyser les données de LHCb avec AngularJS et Django."
-            tools={['AngularJS', 'Django', 'Gulp', 'Bower', 'Jade', 'Less']}
+            date="Avril 2016"
+            location="Taroudant"
+            company="Coopération Agricole COPAG"
+            description={
+              <span>
+                - Etude de la structure interne de la coopération.
+                <br />- Découverte et analyse des méthodes appliquées dans la gestion de leur
+                comptabilité.
+              </span>
+            }
           />
 
-          {/* <Title>Compétences</Title>
+          <Title>Connaisances techniques</Title>
           <Skill
-            description="Conception, dévelopement, test et deploiment des applications web."
-            tools={['NodeJS', 'React', 'Redux', 'TailwindCSS', 'Postgres', 'MongoDB']}
+            description="Design graphique des logos, affiches et autres supports présentatifs."
+            tools={['Photoshop', 'Illustrator']}
           />
           <Skill
             last
-            description="Encadrement et formation en nouvelles technologies de dévelopement web."
-            tools={['Code Review', 'Documentation', 'Pair Programming']}
-          /> */}
-          {/* <Skill
-          description="Résolution des challenges d'implémentation et optimisation des algorithmes."
-          tools={['Algorithmique', 'Math', 'Structures de données', `Techniques d'optimisation`]}
-        /> */}
+            description="Design et création des idées de présentation et mise en valeur."
+            tools={['Photoshop', 'Power Point', 'Photographie']}
+          />
         </div>
-      </div>
-      <div className="page mx-auto bg-white text-md leading-normal p-4">
-        <Title>Projets</Title>
-        <div></div>
       </div>
     </>
   )
 }
 
-const PersonalInfo: FC<{icon: string}> = ({icon, children}) => (
-  <p className="text-left mt-2 pl-3">
+const PersonalInfo: FC<{icon: string; className?: string}> = ({icon, className, children}) => (
+  <p className={cn('text-left mt-2 pl-3', className)}>
     <i className={icon}></i> {children}
   </p>
 )
@@ -195,7 +154,7 @@ const School: FC<{
   diploma: string
   last?: boolean
 }> = ({date, location, name, diploma, last}) => (
-  <div className={cn('pb-4', {'mb-4 border-b': !last})}>
+  <div className={cn('pb-3', {'mb-2 border-b': !last})}>
     <p className="flex justify-between">
       <span className="block font-semibold">
         <i className="fas fa-calendar-alt"></i> {date}
@@ -217,22 +176,22 @@ const Job: FC<{
   date: string
   location: string
   company: string
-  logo: string
+  logo?: string
   position?: string
   description: React.ReactNode
-  tools: string[]
+  tools?: string[]
   last?: boolean
 }> = ({date, location, company, logo, position, description, tools, last}) => (
   <div className={cn('pb-4', {'mb-4 border-b': !last})}>
     <div className="flex">
-      <span className="block w-1/3 font-semibold">
+      <span className="block w-1/4 font-semibold">
         <i className="fas fa-calendar-alt"></i> {date}
       </span>
-      <span className="block w-1/3 font-semibold">
-        <img src={logo} alt={company} className="inline h-8 mx-2" />
+      <span className="block w-1/2 font-semibold">
+        {logo && <img src={logo} alt={company} className="inline h-8 mx-2" />}
         {company}
       </span>
-      <p className="block w-1/3 text-right">
+      <p className="block w-1/4 text-right">
         <span className="inline-block py-1 px-2 bg-gray-300 rounded-md text-sm">
           <i className="fas fa-map-marker-alt"></i> {location}
         </span>
@@ -240,13 +199,15 @@ const Job: FC<{
     </div>
     {position && <p className="font-semibold">{position}</p>}
     <p>{description}</p>
-    <p className="flex justify-end">
-      {tools.map((t) => (
-        <span key={t} className="inline-block mx-2 py-1 px-2 bg-gray-200 rounded-md text-sm">
-          {t}
-        </span>
-      ))}
-    </p>
+    {tools && (
+      <p className="flex justify-end">
+        {tools.map((t) => (
+          <span key={t} className="inline-block mx-2 py-1 px-2 bg-gray-200 rounded-md text-sm">
+            {t}
+          </span>
+        ))}
+      </p>
+    )}
   </div>
 )
 
