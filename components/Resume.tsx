@@ -1,0 +1,265 @@
+import {FC} from 'react'
+import {is} from 'ramda'
+import cn from 'classnames'
+
+export const Resume = (data: any) => {
+  return (
+    <>
+      <div className="page mx-auto bg-white flex text-base leading-normal">
+        <div className="w-1/4 text-sm text-center bg-gray-100 p-6">
+          <img
+            src={data.photo}
+            alt={data.name}
+            className="inline-block rounded-full w-32 mb-3 shadow-md border-4 border-white"
+          />
+          {data.personalInfos.map((x) => (
+            <PersonalInfo key={x.content} {...x} />
+          ))}
+
+          <SideTitle>Classements</SideTitle>
+          {data.ranks.map((x) => (
+            <Rank key={x.name} {...x} />
+          ))}
+
+          <SideTitle>Langages & Outils</SideTitle>
+          {data.tools.map((x) => (
+            <Tool key={x.name} {...x} />
+          ))}
+
+          <SideTitle>Langues</SideTitle>
+          {data.languages.map((x) => (
+            <Tool key={x.name} {...x} />
+          ))}
+        </div>
+
+        <div className="w-3/4 flex-grow border-l p-10">
+          <h1 className="text-2xl text-center mb-4">{data.name}</h1>
+          <h1 className="mt-2 text-lg text-center">{data.quote}</h1>
+
+          <Title>Formation</Title>
+          {data.schools.map((x) => (
+            <School key={x.name} {...x} />
+          ))}
+
+          <Title>Expériences Professionelles</Title>
+          {data.jobs.map((x) => (
+            <Job key={x.date} {...x} />
+          ))}
+        </div>
+      </div>
+      <div className="page mx-auto bg-white text-base leading-normal p-8">
+        <Title>Compétences Techniques</Title>
+        {data.skills.map((x) => (
+          <Skill key={x.description} {...x} />
+        ))}
+
+        <Title>Projets</Title>
+        {data.projects.map((x) => (
+          <Project key={x.name} {...x} />
+        ))}
+
+        <p className="text-center text-xs text-gray-700">
+          {data.note.text}
+          <a href={data.note.link} className="underline hover:text-blue-700">
+            {data.note.link}
+          </a>
+        </p>
+      </div>
+    </>
+  )
+}
+
+const PersonalInfo: FC<{icon: string; link?: string; content: string}> = ({
+  icon,
+  content,
+  link,
+}) => (
+  <p className="flex mt-4 pl-4">
+    <span className="block">
+      <span className="text-gray-600">
+        <i className={icon}></i>
+      </span>
+    </span>
+    {link ? (
+      <a href={link} className="block flex-grow underline hover:text-blue-700">
+        {content}
+      </a>
+    ) : (
+      <span className="block flex-grow">{content}</span>
+    )}
+  </p>
+)
+
+const Title: FC = ({children}) => (
+  <h1 className="bg-gray-800 text-lg text-white font-bold text-center mt-6 mb-4 py-3 shadow-md rounded-lg">
+    {children}
+  </h1>
+)
+
+const SideTitle: FC = ({children}) => (
+  <h1 className="text-base text-gray-800 font-bold pb-2 mt-8 mb-4 border-b">{children}</h1>
+)
+
+const Rank: FC<{name: string; url: string; rank: string}> = ({name, url, rank}) => (
+  <p className="text-left text-sm mt-2">
+    <a href={url} className="hover:text-blue-700">
+      <span className="inline-block w-3/5 underline">{name}</span>
+    </a>
+    <span className="font-semibold">{rank}</span>
+  </p>
+)
+
+const Tool: FC<{name: string; level: number; child?: boolean}> = ({name, level, child}) => (
+  <p className="text-left text-sm mt-2">
+    <span className={cn('inline-block w-1/2', {'pl-3': child})}>{name}</span>
+    <span className="inline-block border rounded overflow-hidden bg-white h-2 w-1/2 pr-1">
+      <span
+        className={cn(`block h-full rounded`, {
+          'w-full bg-blue-600': level == 5,
+          'w-4/5 bg-green-600': level == 4,
+          'w-3/5 bg-yellow-600': level == 3,
+          'w-2/5 bg-orange-600': level == 2,
+          'w-1/5 bg-red-600': level == 1,
+        })}
+      ></span>
+    </span>
+  </p>
+)
+
+const School: FC<{
+  date: string
+  location: string
+  name: string
+  diploma: string
+  last?: boolean
+}> = ({date, location, name, diploma, last}) => (
+  <div className={cn('pb-4', {'mb-4 border-b': !last})}>
+    <p className="flex justify-between">
+      <span className="block font-semibold">
+        <span className="text-gray-700">
+          <i className="fas fa-calendar-alt"></i>
+        </span>{' '}
+        {date}
+      </span>
+      <span className="block py-1 px-2 bg-gray-300 rounded-md text-sm">
+        <span className="text-gray-700">
+          <i className="fas fa-map-marker-alt"></i>
+        </span>{' '}
+        {location}
+      </span>
+    </p>
+    <p style={{fontSize: '0.95rem '}}>
+      <span className="text-gray-700">
+        <i className="fas fa-school"></i>
+      </span>{' '}
+      {name}
+    </p>
+    <p>
+      <span className="text-gray-700">
+        <i className="fas fa-graduation-cap"></i>
+      </span>{' '}
+      {diploma}
+    </p>
+  </div>
+)
+
+const Job: FC<{
+  date: string
+  location: string
+  company: string
+  logo: string
+  position?: string
+  description: string | string[]
+  tools: string[]
+  last?: boolean
+}> = ({date, location, company, logo, position, description, tools, last}) => (
+  <div className={cn('pb-4', {'mb-4 border-b': !last})}>
+    <div className="flex">
+      <span className="block w-1/3 font-semibold">
+        <span className="text-gray-700">
+          <i className="fas fa-calendar-alt"></i>
+        </span>{' '}
+        {date}
+      </span>
+      <span className="block w-1/3 font-semibold">
+        <img src={logo} alt={company} className="inline h-8 mx-2" />
+        {company}
+      </span>
+      <p className="block w-1/3 text-right">
+        <span className="inline-block py-1 px-2 bg-gray-300 rounded-md text-sm">
+          <span className="text-gray-700">
+            <i className="fas fa-map-marker-alt"></i>
+          </span>{' '}
+          {location}
+        </span>
+      </p>
+    </div>
+    {position && <p className="font-semibold">{position}</p>}
+    {is(String, description) ? (
+      <p className="text-justify my-2">{description}</p>
+    ) : (
+      <>
+        {(description as string[]).map((line) => (
+          <p className="text-justify my-2">{line}</p>
+        ))}
+      </>
+    )}
+    <p>
+      {tools.map((t) => (
+        <span key={t} className="inline-block mx-2 py-1 px-2 bg-gray-200 rounded-md text-sm">
+          {t}
+        </span>
+      ))}
+    </p>
+  </div>
+)
+
+const Skill: FC<{
+  description: string
+  tools?: string[]
+  last?: boolean
+}> = ({description, tools, last}) => (
+  <div className={cn('px-4 pb-3', {'mb-3 border-b border-gray-300': !last})}>
+    <p>{description}</p>
+    {tools && (
+      <p className="mt-2">
+        {tools.map((t) => (
+          <span key={t} className="inline-block mx-2 py-1 px-2 bg-gray-200 rounded-md text-sm">
+            {t}
+          </span>
+        ))}
+      </p>
+    )}
+  </div>
+)
+
+const Project: FC<{
+  date: string
+  name: string
+  link: string
+  description: string
+  tools?: string[]
+  last?: boolean
+}> = ({date, name, link, description, tools, last}) => (
+  <div className={cn('px-4 pb-3', {'mb-4 border-b border-gray-400': !last})}>
+    <p className="flex justify-between items-center">
+      <span className="block mr-3">
+        <span className="font-semibold">{date}: </span>
+        <span className="text-lg">{name}</span>
+      </span>
+      <a href={link} className="block text-sm underline hover:text-blue-700">
+        {link}
+      </a>
+    </p>
+    <p className="text-justify">{description}</p>
+    {tools && (
+      <p className="mt-2">
+        {tools.map((t) => (
+          <span key={t} className="inline-block mx-2 py-1 px-2 bg-gray-200 rounded-md text-sm">
+            {t}
+          </span>
+        ))}
+      </p>
+    )}
+  </div>
+)
