@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #444;
+}
+
+@page {
+  size: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  width: 21cm;
+  height: 29.7cm;
+  overflow: hidden;
+}
