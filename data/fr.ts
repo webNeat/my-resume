@@ -1,3 +1,13 @@
+export const labels = {
+  ranks: 'Classements',
+  tools: 'Langages & Outils',
+  languages: 'Langues',
+  education: 'Formation',
+  experiences: 'Expériences Professionelles',
+  skills: 'Compétences Techniques',
+  projects: 'Projets',
+}
+
 export const name = 'Amine Ben hammou'
 export const photo = '/profile.jpeg'
 export const quote =
@@ -68,35 +78,37 @@ export const schools = [
 
 export const jobs = [
   {
-    date: 'July 2017',
+    date: 'Juillet 2017',
     location: 'Remote, France',
     company: 'MailPoet',
+    link: 'https://www.mailpoet.com',
     logo: '/logos/mailpoet.png',
     description: [
       'Travail dans une équipe internationale remote avec des méthodologies agiles.',
       "Développement et maintenance du plugin open source MailPoet et des autres projets de l'entreprise, avec collaboration et code review sur Github.",
       'Support du plugin et résolution des problèmes techniques des utilisateurs.',
-      'Migration du code vers les nouvelles technologies (Typescript, React Hooks, Redux, Doctrine, ...).',
+      'Migration du code vers les nouvelles technologies.',
       'Résolution des problèmes de performance avec optimisation du code et des requêtes de base de données.',
-      'Implémentation de nouvelles interface web avec Typescript, React et Sass.',
+      'Implémentation de nouvelles interfaces web avec Typescript, React et Sass.',
     ],
     tools: ['Typescript', 'React', 'Redux', 'NodeJS', 'WordPress', 'Kanban', 'OKR'],
   },
   {
-    date: 'Oct 2015 - Jun 2017',
+    date: 'Octobre 2015 - Juin 2017',
     location: 'Sophia Antipolis, France',
     company: 'Amadeus',
+    link: 'https://amadeus.com',
     logo: '/logos/amadeus.png',
-    position: 'Software Engineer',
     description:
       'Maintenance de plusieurs applications en utilisant C++, Java, Python et Javascript, en agile Scrum / Kanban.',
     tools: ['C++', 'JavaEE', 'Javascript', 'Python', 'Git', 'Scrum', 'Kanban'],
   },
   {
     last: true,
-    date: 'Apr - Sep 2015',
+    date: 'Avril - Septembre 2015',
     location: 'Meyrin, Suisse',
     company: 'CERN',
+    link: 'https://home.cern/',
     logo: 'https://framework.web.cern.ch/framework/1.0/img/logo/badge_80.png',
     description:
       "Création d'une application web modulaire pour analyser les données de LHCb avec AngularJS et Django.",
@@ -131,7 +143,7 @@ export const skills = [
 
 export const projects = [
   {
-    date: 'Sep 2019',
+    date: 'Septembre 2017',
     name: 'Mahkamaty - Backend lead developer',
     link: 'https://mahkamaty.com/fr-ma/about-us',
     description:
@@ -139,14 +151,14 @@ export const projects = [
     tools: ['NodeJS', 'Adonis', 'MySQL', 'Postgres', 'Azure DevOps'],
   },
   {
-    date: 'Sep 2019',
+    date: 'Septembre 2019',
     name: 'React Tidy',
     link: 'https://github.com/webNeat/react-tidy',
     description: 'Une collection de React Hooks qui sont flexibles, testés, et bien documentés.',
     tools: ['Typescript', 'React'],
   },
   // {
-  //   date: 'Feb 2019',
+  //   date: 'Fevrier 2019',
   //   name: 'React Dye',
   //   link: 'https://github.com/webNeat/react-dye',
   //   description:
@@ -154,7 +166,7 @@ export const projects = [
   //   tools: ['Typescript', 'Jest', 'React Hooks', 'React Suspense'],
   // },
   {
-    date: 'Oct 2017',
+    date: 'Octobre 2017',
     name: 'Wajez API',
     link: 'https://github.com/wajez/api',
     description:
@@ -170,7 +182,7 @@ export const projects = [
     ],
   },
   {
-    date: 'Oct 2017',
+    date: 'Octobre 2017',
     name: 'Wajez API Test',
     link: 'https://github.com/wajez/api-test',
     description:
@@ -178,14 +190,14 @@ export const projects = [
     tools: ['NodeJS', 'Mongoose', 'Mocha', 'Chai'],
   },
   {
-    date: 'Jul 2016',
+    date: 'Juillet 2016',
     name: 'Tarsana',
     link: 'https://github.com/tarsana',
     description:
       'Un ecosystème qui permet aux dévelopeurs de construire et partager des applications console.',
   },
   {
-    date: 'Oct 2015',
+    date: 'Octobre 2015',
     name: 'Lumen Generators',
     link: 'https://github.com/webNeat/lumen-generators',
     description:

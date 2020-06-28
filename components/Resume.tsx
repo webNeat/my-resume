@@ -16,17 +16,17 @@ export const Resume = (data: any) => {
             <PersonalInfo key={x.content} {...x} />
           ))}
 
-          <SideTitle>Classements</SideTitle>
+          <SideTitle>{data.labels.ranks}</SideTitle>
           {data.ranks.map((x) => (
             <Rank key={x.name} {...x} />
           ))}
 
-          <SideTitle>Langages & Outils</SideTitle>
+          <SideTitle>{data.labels.tools}</SideTitle>
           {data.tools.map((x) => (
             <Tool key={x.name} {...x} />
           ))}
 
-          <SideTitle>Langues</SideTitle>
+          <SideTitle>{data.labels.languages}</SideTitle>
           {data.languages.map((x) => (
             <Tool key={x.name} {...x} />
           ))}
@@ -36,31 +36,31 @@ export const Resume = (data: any) => {
           <h1 className="text-2xl text-center mb-4">{data.name}</h1>
           <h1 className="mt-2 text-lg text-center">{data.quote}</h1>
 
-          <Title>Formation</Title>
+          <Title>{data.labels.education}</Title>
           {data.schools.map((x) => (
             <School key={x.name} {...x} />
           ))}
 
-          <Title>Expériences Professionelles</Title>
+          <Title>{data.labels.experiences}</Title>
           {data.jobs.map((x) => (
             <Job key={x.date} {...x} />
           ))}
         </div>
       </div>
       <div className="page mx-auto bg-white text-base leading-normal p-8">
-        <Title>Compétences Techniques</Title>
+        <Title>{data.labels.skills}</Title>
         {data.skills.map((x) => (
           <Skill key={x.description} {...x} />
         ))}
 
-        <Title>Projets</Title>
+        <Title>{data.labels.projects}</Title>
         {data.projects.map((x) => (
           <Project key={x.name} {...x} />
         ))}
 
         <p className="text-center text-xs text-gray-700">
           {data.note.text}
-          <a href={data.note.link} className="underline hover:text-blue-700">
+          <a target="_blank" href={data.note.link} className="underline hover:text-blue-700">
             {data.note.link}
           </a>
         </p>
@@ -74,35 +74,39 @@ const PersonalInfo: FC<{icon: string; link?: string; content: string}> = ({
   content,
   link,
 }) => (
-  <p className="flex mt-4 pl-4">
+  <p className="flex mt-4 pl-2">
     <span className="block">
       <span className="text-gray-600">
         <i className={icon}></i>
       </span>
     </span>
     {link ? (
-      <a href={link} className="block flex-grow underline hover:text-blue-700">
+      <a
+        target="_blank"
+        href={link}
+        className="block ml-2 flex-grow underline hover:text-blue-700"
+      >
         {content}
       </a>
     ) : (
-      <span className="block flex-grow">{content}</span>
+      <span className="block flex-grow ml-2">{content}</span>
     )}
   </p>
 )
 
 const Title: FC = ({children}) => (
-  <h1 className="bg-gray-800 text-lg text-white font-bold text-center mt-6 mb-4 py-3 shadow-md rounded-lg">
+  <h2 className="bg-gray-800 text-lg text-white font-bold text-center mt-6 mb-4 py-3 shadow-md rounded-lg">
     {children}
-  </h1>
+  </h2>
 )
 
 const SideTitle: FC = ({children}) => (
-  <h1 className="text-base text-gray-800 font-bold pb-2 mt-8 mb-4 border-b">{children}</h1>
+  <h3 className="text-base text-gray-800 font-bold pb-2 mt-8 mb-4 border-b">{children}</h3>
 )
 
 const Rank: FC<{name: string; url: string; rank: string}> = ({name, url, rank}) => (
   <p className="text-left text-sm mt-2">
-    <a href={url} className="hover:text-blue-700">
+    <a target="_blank" href={url} className="hover:text-blue-700">
       <span className="inline-block w-3/5 underline">{name}</span>
     </a>
     <span className="font-semibold">{rank}</span>
@@ -167,23 +171,21 @@ const Job: FC<{
   date: string
   location: string
   company: string
+  link: string
   logo: string
   position?: string
   description: string | string[]
   tools: string[]
   last?: boolean
-}> = ({date, location, company, logo, position, description, tools, last}) => (
+}> = ({date, location, company, link, logo, position, description, tools, last}) => (
   <div className={cn('pb-4', {'mb-4 border-b': !last})}>
-    <div className="flex">
-      <span className="block w-1/3 font-semibold">
-        <span className="text-gray-700">
-          <i className="fas fa-calendar-alt"></i>
-        </span>{' '}
-        {date}
-      </span>
+    <div className="flex items-center">
+      <span className="block w-1/3 font-semibold text-sm">{date}</span>
       <span className="block w-1/3 font-semibold">
         <img src={logo} alt={company} className="inline h-8 mx-2" />
-        {company}
+        <a target="_blank" href={link} className="hover:text-blue-700">
+          {company}
+        </a>
       </span>
       <p className="block w-1/3 text-right">
         <span className="inline-block py-1 px-2 bg-gray-300 rounded-md text-sm">
@@ -247,7 +249,7 @@ const Project: FC<{
         <span className="font-semibold">{date}: </span>
         <span className="text-lg">{name}</span>
       </span>
-      <a href={link} className="block text-sm underline hover:text-blue-700">
+      <a target="_blank" href={link} className="block text-sm underline hover:text-blue-700">
         {link}
       </a>
     </p>
