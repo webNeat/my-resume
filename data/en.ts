@@ -3,7 +3,7 @@ export const labels = {
   tools: 'Programming Tools',
   languages: 'Languages',
   education: 'Education',
-  experiences: 'Work Experiences',
+  experiences: 'Work Experience',
   skills: 'Technical Skills',
   projects: 'Projects',
 }
