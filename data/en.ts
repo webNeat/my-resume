@@ -189,6 +189,6 @@ export const projects = [
 ]
 
 export const note = {
-  text: 'Check the source code of this resume ',
+  text: 'Check out the source code of this resume ',
   link: 'https://github.com/webNeat/my-resume',
 }
