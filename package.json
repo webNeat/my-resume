@@ -5,7 +5,6 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "deploy": "next build",
     "start": "pm2 start ecosystem.json",
     "stop": "pm2 stop ecosystem.json"
   },
