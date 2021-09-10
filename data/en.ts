@@ -1,3 +1,5 @@
+export * from './common'
+
 export const labels = {
   ranks: 'Reputation / Ranks',
   tools: 'Programming Tools',
@@ -18,36 +20,6 @@ export const personalInfos = [
   {icon: 'fas fa-phone-alt', content: '(+33) 7 55 18 34 70', link: 'tel:+33755183470'},
   {icon: 'fas fa-at', content: 'webneat@gmail.com', link: 'mailto:webneat@gmail.com'},
   {icon: 'fab fa-github', content: 'github.com/webneat', link: 'https://github.com/webneat'},
-]
-
-export const ranks = [
-  {
-    name: 'CodinGame',
-    rank: 'Top 2%',
-    url: 'https://www.codingame.com/profile/fa32f4016cfd0b630075763634c1398b149351',
-  },
-  {name: 'Stackoverflow', rank: '2239', url: 'https://stackoverflow.com/users/1487270/webneat'},
-  {name: 'CodeJam', rank: 'Round 1', url: 'https://codingcompetitions.withgoogle.com/codejam'},
-]
-
-export const tools = [
-  {name: 'Typescript', level: 5},
-  {child: true, name: 'React', level: 5},
-  {child: true, name: 'Next', level: 4},
-  {child: true, name: 'Redux', level: 5},
-  {child: true, name: 'MobX', level: 5},
-  {name: 'TailwindCSS', level: 5},
-  {name: 'NodeJS', level: 5},
-  {child: true, name: 'Express', level: 5},
-  {child: true, name: 'Adonis', level: 5},
-  {child: true, name: 'Nest', level: 4},
-  {name: 'PHP', level: 5},
-  {child: true, name: 'Laravel', level: 5},
-  {child: true, name: 'Symfony', level: 4},
-  {name: 'SQL', level: 5},
-  {name: 'NoSQL', level: 4},
-  {name: 'Git', level: 5},
-  {name: 'Docker', level: 4},
 ]
 
 export const languages = [
@@ -74,20 +46,24 @@ export const schools = [
 
 export const jobs = [
   {
-    date: 'July 2017',
+    date: 'Nov 2020',
+    location: 'Remote, France',
+    company: 'Datadog',
+    link: 'https://www.datadoghq.com/',
+    logo: '/logos/datadog.png',
+    description: [
+      `I worked with the RUM (Real User Monitoring) team to develop and maintain the browser SDK. This open source Javascript SDK tracks the users sessions (navigation, clicks, resources, errors, ...) and reports them to Datadog. The customers can then use their dashboards to explore and analyze how users are using their websites, and investigate and solve errors and performance issues.`,
+    ],
+    tools: ['Typescript', 'NodeJS', 'DOM', 'ESLint', 'Gitlab'],
+  },
+  {
+    date: 'July 2017 - Nov 2020',
     location: 'Remote, France',
     company: 'MailPoet',
     link: 'https://www.mailpoet.com',
     logo: '/logos/mailpoet.png',
-    description: [
-      `I worked remotely within an international team on the development and maintenance of the 
-      MailPoet WordPress plugin, the shop site and other projects. My daily tasks included:`,
-      `Discussing and implementing new features and fixing bugs.`,
-      `Reviewing other developers Pull Requests and giving them feedback.`,
-      `Migrating the code to new technologies like Typescript, React Hooks and Doctrine.`,
-      `Helping the support team by investigating and solving customers technical issues.`,
-      `Improving the performance by analyzing and refactoring the code and the database queries`,
-    ],
+    description: `I worked remotely within an international team on the development and maintenance of the 
+      MailPoet WordPress plugin, the shop site and other projects.`,
     tools: ['Typescript', 'React', 'Redux', 'NodeJS', 'PHP', 'MySQL'],
   },
   {
@@ -109,7 +85,7 @@ export const jobs = [
     logo: 'https://framework.web.cern.ch/framework/1.0/img/logo/badge_80.png',
     description:
       'I developed a frontend modular web application to help analyze data of the LHCb experiments.',
-    tools: ['AngularJS', 'Django', 'Gulp', 'Bower', 'Jade', 'Less'],
+    tools: ['AngularJS', 'Django', 'Gulp', 'Bower', 'Jade/Pug', 'Less'],
   },
 ]
 

@@ -1,3 +1,5 @@
+export * from './common'
+
 export const labels = {
   ranks: 'Classements',
   tools: 'Langages & Outils',
@@ -16,42 +18,12 @@ export const quote =
 export const personalInfos = [
   {
     icon: 'fas fa-user-tie',
-    content: '30 ans, célibataire',
+    content: '31 ans, célibataire',
   },
   {icon: 'fas fa-map-marker-alt', content: '64 rue de Migneaux 78300 Poissy'},
   {icon: 'fas fa-phone-alt', content: '(+33) 7 55 18 34 70', link: 'tel:+33755183470'},
   {icon: 'fas fa-at', content: 'webneat@gmail.com', link: 'mailto:webneat@gmail.com'},
   {icon: 'fab fa-github', content: 'github.com/webneat', link: 'https://github.com/webneat'},
-]
-
-export const ranks = [
-  {
-    name: 'CodinGame',
-    rank: 'Top 2%',
-    url: 'https://www.codingame.com/profile/fa32f4016cfd0b630075763634c1398b149351',
-  },
-  {name: 'Stackoverflow', rank: '2239', url: 'https://stackoverflow.com/users/1487270/webneat'},
-  {name: 'CodeJam', rank: 'Round 1', url: 'https://codingcompetitions.withgoogle.com/codejam'},
-]
-
-export const tools = [
-  {name: 'Typescript', level: 5},
-  {child: true, name: 'React', level: 5},
-  {child: true, name: 'Next', level: 4},
-  {child: true, name: 'Redux', level: 5},
-  {child: true, name: 'MobX', level: 5},
-  {name: 'TailwindCSS', level: 5},
-  {name: 'NodeJS', level: 5},
-  {child: true, name: 'Express', level: 5},
-  {child: true, name: 'Adonis', level: 5},
-  {child: true, name: 'Nest', level: 4},
-  {name: 'PHP', level: 5},
-  {child: true, name: 'Laravel', level: 5},
-  {child: true, name: 'Symfony', level: 4},
-  {name: 'SQL', level: 5},
-  {name: 'NoSQL', level: 4},
-  {name: 'Git', level: 5},
-  {name: 'Docker', level: 4},
 ]
 
 export const languages = [
@@ -78,19 +50,22 @@ export const schools = [
 
 export const jobs = [
   {
+    date: 'Nov 2020',
+    location: 'Remote, France',
+    company: 'Datadog',
+    link: 'https://www.datadoghq.com/',
+    logo: '/logos/datadog.png',
+    description: `Développement et maintenance du browser SDK dans l'équipe RUM (Real User Monitoring). Ce SDK open source enregistre les sessions des utilisateurs (navigation, clics, ressources, erreurs, ...) et les rapporte à Datadog. Les clients peuvent ensuite utiliser leurs tableaux de bord pour explorer et analyser la façon dont les utilisateurs utilisent leurs sites, pour enquêter et résoudre les erreurs et les problèmes de performances.`,
+    tools: ['Typescript', 'NodeJS', 'DOM', 'ESLint', 'Gitlab'],
+  },
+  {
     date: 'Juillet 2017',
     location: 'Remote, France',
     company: 'MailPoet',
     link: 'https://www.mailpoet.com',
     logo: '/logos/mailpoet.png',
-    description: [
-      'Travail dans une équipe internationale remote avec des méthodologies agiles.',
-      "Développement et maintenance du plugin open source MailPoet et des autres projets de l'entreprise, avec collaboration et code review sur Github.",
-      'Support du plugin et résolution des problèmes techniques des utilisateurs.',
-      'Migration du code vers les nouvelles technologies.',
-      'Résolution des problèmes de performance avec optimisation du code et des requêtes de base de données.',
-      'Implémentation de nouvelles interfaces web avec Typescript, React et Sass.',
-    ],
+    description:
+      "Développement et maintenance du plugin open source MailPoet et des autres projets de l'entreprise dans une équipe internationale en full-remote en agile, avec collaboration et code review sur Github. Migration du code vers les nouvelles technologies et résolution des problèmes de performance en optimisant les algorithms et les requêtes des bases de données.",
     tools: ['Typescript', 'React', 'Redux', 'NodeJS', 'WordPress', 'Kanban', 'OKR'],
   },
   {
@@ -208,6 +183,6 @@ export const projects = [
 ]
 
 export const note = {
-  text: 'Ce CV est écrit avec NextJS et TailwindCSS, trouvez le code source sur ',
+  text: 'Voir le code source de ce CV ',
   link: 'https://github.com/webNeat/my-resume',
 }

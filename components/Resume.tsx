@@ -101,15 +101,15 @@ const Title: FC = ({children}) => (
 )
 
 const SideTitle: FC = ({children}) => (
-  <h3 className="text-base text-gray-800 font-bold pb-2 mt-8 mb-4 border-b">{children}</h3>
+  <h3 className="text-base text-gray-800 font-bold pb-2 mt-8 mb-3 border-b">{children}</h3>
 )
 
 const Rank: FC<{name: string; url: string; rank: string}> = ({name, url, rank}) => (
-  <p className="text-left text-sm mt-2">
-    <a target="_blank" href={url} className="hover:text-blue-700">
-      <span className="inline-block w-3/5 underline">{name}</span>
+  <p className="flex justify-between text-sm mt-2">
+    <a target="_blank" href={url} className="block hover:text-blue-700">
+      <span className="inline-block underline">{name}</span>
     </a>
-    <span className="font-semibold">{rank}</span>
+    <span className="block font-semibold">{rank}</span>
   </p>
 )
 

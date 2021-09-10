@@ -8,18 +8,18 @@
     "start": "pm2 start ecosystem.json",
     "stop": "pm2 stop ecosystem.json"
   },
+  "devDependencies": {
+    "@types/node": "^16.9.1",
+    "@types/react": "^17.0.20",
+    "prettier": "^2.4.0",
+    "tailwindcss": "^2.2.15",
+    "typescript": "^4.4.2"
+  },
   "dependencies": {
     "classnames": "^2.3.1",
-    "next": "^11.0.1",
+    "next": "^11.1.2",
     "ramda": "^0.27.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
-  },
-  "devDependencies": {
-    "@types/node": "^16.4.10",
-    "@types/react": "^17.0.15",
-    "prettier": "^2.3.2",
-    "tailwindcss": "^2.2.7",
-    "typescript": "^4.3.5"
   }
 }

@@ -2,7 +2,7 @@ import {AppProps} from 'next/app'
 import Head from 'next/head'
 import './style.css'
 
-export default ({Component, pageProps}: AppProps) => (
+const App = ({Component, pageProps}: AppProps) => (
   <>
     <Head>
       <title>Amine Ben hammou</title>
@@ -15,3 +15,5 @@ export default ({Component, pageProps}: AppProps) => (
     <Component {...pageProps} />
   </>
 )
+
+export default App
