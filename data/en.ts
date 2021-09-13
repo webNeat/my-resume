@@ -54,7 +54,7 @@ export const jobs = [
     description: [
       `I worked with the RUM (Real User Monitoring) team to develop and maintain the browser SDK. This open source Javascript SDK tracks the users sessions (navigation, clicks, resources, errors, ...) and reports them to Datadog. The customers can then use their dashboards to explore and analyze how users are using their websites, and investigate and solve errors and performance issues.`,
     ],
-    tools: ['Typescript', 'NodeJS', 'DOM', 'ESLint', 'Gitlab'],
+    tools: ['Typescript', 'NodeJS', 'DOM', 'ESLint', 'Gitlab', 'Kanban', 'OKR'],
   },
   {
     date: 'July 2017 - Nov 2020',

@@ -95,7 +95,7 @@ const PersonalInfo: FC<{icon: string; link?: string; content: string}> = ({
 )
 
 const Title: FC = ({children}) => (
-  <h2 className="bg-gray-800 text-lg text-white font-bold text-center mt-6 mb-4 py-3 shadow-md rounded-lg">
+  <h2 className="bg-gray-800 text-lg text-white font-bold text-center mt-3 mb-3 py-3 shadow-md rounded-lg">
     {children}
   </h2>
 )

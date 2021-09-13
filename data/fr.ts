@@ -56,10 +56,10 @@ export const jobs = [
     link: 'https://www.datadoghq.com/',
     logo: '/logos/datadog.png',
     description: `Développement et maintenance du browser SDK dans l'équipe RUM (Real User Monitoring). Ce SDK open source enregistre les sessions des utilisateurs (navigation, clics, ressources, erreurs, ...) et les rapporte à Datadog. Les clients peuvent ensuite utiliser leurs tableaux de bord pour explorer et analyser la façon dont les utilisateurs utilisent leurs sites, pour enquêter et résoudre les erreurs et les problèmes de performances.`,
-    tools: ['Typescript', 'NodeJS', 'DOM', 'ESLint', 'Gitlab'],
+    tools: ['Typescript', 'NodeJS', 'DOM', 'ESLint', 'Gitlab', 'Kanban', 'OKR'],
   },
   {
-    date: 'Juillet 2017',
+    date: 'Juillet 2017 - Nov 2020',
     location: 'Remote, France',
     company: 'MailPoet',
     link: 'https://www.mailpoet.com',
