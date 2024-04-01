@@ -50,7 +50,18 @@ export const schools = [
 
 export const jobs = [
   {
-    date: 'Nov 2020',
+    date: 'Nov 2021 - Present',
+    location: 'Remote, France',
+    company: 'Monoprix Online',
+    link: 'https://monoprix.fr/',
+    logo: '/logos/monoprix.png',
+    description: [
+      `Conception, développement et maintenance de plusieurs microservices sur un environnement Google Cloud. Mes tâches incluent: analyser et résoudre les problèmes de performance, implémenter un système de cache avec Redis, créer et documenter une bibliothèque d'outils internes, faire des revues de code et partager des connaissances avec l'équipe via des articles et des présentations.`,
+    ],
+    tools: ['Typescript', 'NodeJS', 'Postgres', 'Redis', 'PubSub', 'Gitlab', 'Scrum'],
+  },
+  {
+    date: 'Nov 2020 - Oct 2021',
     location: 'Remote, France',
     company: 'Datadog',
     link: 'https://www.datadoghq.com/',
@@ -74,8 +85,7 @@ export const jobs = [
     company: 'Amadeus',
     link: 'https://amadeus.com',
     logo: '/logos/amadeus.png',
-    description:
-      'Maintenance de plusieurs applications en utilisant C++, Java, Python et Javascript, en agile Scrum / Kanban.',
+    description: '',
     tools: ['C++', 'JavaEE', 'Javascript', 'Python', 'Git', 'Scrum', 'Kanban'],
   },
   {
@@ -85,8 +95,7 @@ export const jobs = [
     company: 'CERN',
     link: 'https://home.cern/',
     logo: 'https://framework.web.cern.ch/framework/1.0/img/logo/badge_80.png',
-    description:
-      "Création d'une application web modulaire pour analyser les données de LHCb avec AngularJS et Django.",
+    description: '',
     tools: ['AngularJS', 'Django', 'Gulp', 'Bower', 'Jade', 'Less'],
   },
 ]
@@ -126,43 +135,34 @@ export const projects = [
     tools: ['NodeJS', 'Adonis', 'MySQL', 'Postgres', 'Azure DevOps'],
   },
   {
+    date: 'Jun 2023',
+    name: 'ts-perf',
+    link: 'https://github.com/webNeat/ts-perf',
+    description:
+      'Une bibliothèque et une commande pour mesurer la performance de compilation du code Typescript.',
+    tools: ['Typescript'],
+  },
+  {
+    date: 'Dec 2021',
+    name: 'ctrl-keys',
+    link: 'https://github.com/webNeat/ctrl-keys',
+    description:
+      'Une bibliothèque TypeScript légère et très rapide pour gérer les raccourcis clavier dans les applications web.',
+    tools: ['Typescript', 'DOM'],
+  },
+  {
+    date: 'Nov 2021',
+    name: 'just-types',
+    link: 'https://github.com/webNeat/just-types',
+    description: 'Une collection de types génériques utiles pour Typescript.',
+    tools: ['Typescript'],
+  },
+  {
     date: 'Septembre 2019',
     name: 'React Tidy',
     link: 'https://github.com/webNeat/react-tidy',
     description: 'Une collection de React Hooks qui sont flexibles, testés, et bien documentés.',
     tools: ['Typescript', 'React'],
-  },
-  // {
-  //   date: 'Fevrier 2019',
-  //   name: 'React Dye',
-  //   link: 'https://github.com/webNeat/react-dye',
-  //   description:
-  //     'Une library pour faciliter la décoration des composants React tout en ayant un code lisible et maintenable.',
-  //   tools: ['Typescript', 'Jest', 'React Hooks', 'React Suspense'],
-  // },
-  {
-    date: 'Octobre 2017',
-    name: 'Wajez API',
-    link: 'https://github.com/wajez/api',
-    description:
-      "Un framework pour créer des API REST facilement. Basé sur ExpressJS et Mongoose, il génère toutes les routes d'authentification JWT et des opérations SCRUD à partir des models, et permet de personaliser le comportement de chaque route avec un code déclaratif.",
-    tools: [
-      'NodeJS',
-      'Express',
-      'Mongoose',
-      'Sanctuary',
-      'JWT',
-      'Mocha',
-      'Programmation Fonctionelle',
-    ],
-  },
-  {
-    date: 'Octobre 2017',
-    name: 'Wajez API Test',
-    link: 'https://github.com/wajez/api-test',
-    description:
-      "Un outil pour faire des tests fonctionels d'un API REST de manière simple et déclarative. En se basant sur les models, il génère des données aléatoires et assure que les routes de CRUD fonctionnent correctement.",
-    tools: ['NodeJS', 'Mongoose', 'Mocha', 'Chai'],
   },
   {
     date: 'Juillet 2016',

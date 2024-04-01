@@ -13,7 +13,7 @@ export const labels = {
 export const name = 'Amine Ben hammou'
 export const photo = '/profile.jpeg'
 export const quote =
-  'I like to solve challenging problems using efficient algorithms and high quality code.'
+  'I am a software engineer with focus on web development and performance optimization'
 
 export const personalInfos = [
   {icon: 'fas fa-map-marker-alt', content: '64 rue de Migneaux 78300 Poissy France'},
@@ -46,7 +46,18 @@ export const schools = [
 
 export const jobs = [
   {
-    date: 'Nov 2020',
+    date: 'Nov 2021 - Present',
+    location: 'Remote, France',
+    company: 'Monoprix Online',
+    link: 'https://monoprix.fr/',
+    logo: '/logos/monoprix.png',
+    description: [
+      `I worked as a backend engineer on desiging, developing and maintaining multiple microservices on a Google Cloud environment. My tasks included: analyzing and solving performance issues, implementing cache system using Redis, creating and documenting internal tools library, doing code reviews and sharing knowledge with the team via presentations`,
+    ],
+    tools: ['Typescript', 'NodeJS', 'Postgres', 'Redis', 'PubSub', 'Gitlab', 'Scrum'],
+  },
+  {
+    date: 'Nov 2020 - Oct 2021',
     location: 'Remote, France',
     company: 'Datadog',
     link: 'https://www.datadoghq.com/',
@@ -64,7 +75,7 @@ export const jobs = [
     logo: '/logos/mailpoet.png',
     description: `I worked remotely within an international team on the development and maintenance of the 
       MailPoet WordPress plugin, the shop site and other projects.`,
-    tools: ['Typescript', 'React', 'Redux', 'NodeJS', 'PHP', 'MySQL'],
+    tools: ['Typescript', 'React', 'Redux', 'NodeJS', 'PHP', 'MySQL', 'OKR'],
   },
   {
     date: 'Oct 2015 - Jun 2017',
@@ -72,8 +83,7 @@ export const jobs = [
     company: 'Amadeus',
     link: 'https://amadeus.com',
     logo: '/logos/amadeus.png',
-    description:
-      'I maintained many applications written in a variety of languages: C++, Java, Python and Javascript',
+    description: '',
     tools: ['C++', 'JavaEE', 'Javascript', 'Python', 'Git', 'Scrum', 'Kanban'],
   },
   {
@@ -83,8 +93,7 @@ export const jobs = [
     company: 'CERN',
     link: 'https://home.cern/',
     logo: 'https://framework.web.cern.ch/framework/1.0/img/logo/badge_80.png',
-    description:
-      'I developed a frontend modular web application to help analyze data of the LHCb experiments.',
+    description: '',
     tools: ['AngularJS', 'Django', 'Gulp', 'Bower', 'Jade/Pug', 'Less'],
   },
 ]
@@ -92,7 +101,16 @@ export const jobs = [
 export const skills = [
   {
     description: 'Development, test and deployment of web applications.',
-    tools: ['NodeJS', 'React', 'Redux', 'TailwindCSS', 'Postgres', 'MongoDB', 'Docker', 'Ansible'],
+    tools: [
+      'Typescript',
+      'NodeJS',
+      'React',
+      'TailwindCSS',
+      'Postgres',
+      'Redis',
+      'Docker',
+      'Ansible',
+    ],
   },
   {
     description: 'Solving challenging technical problems and designing efficient algorithms.',
@@ -108,20 +126,26 @@ export const skills = [
 
 export const projects = [
   {
-    date: 'Oct 2015',
-    name: 'Lumen Generators',
-    link: 'https://github.com/webNeat/lumen-generators',
+    date: 'Jun 2023',
+    name: 'ts-perf',
+    link: 'https://github.com/webNeat/ts-perf',
     description:
-      'A collection of generators for Lumen and Laravel 5. Downloaded 124K+ times and used by 300+ open source project on Github.',
-    tools: ['PHP', 'Laravel', 'Lumen', 'Twig'],
+      'A library and command line tool to measure the compile time performance of Typescript code.',
+    tools: ['Typescript'],
   },
   {
-    date: 'Jul 2016',
-    name: 'Tarsana',
-    link: 'https://github.com/tarsana',
-    description:
-      'An ecosystem in which developers can create and share cross-platform command lines applications using their favorite programming language.',
-    tools: ['PHP', 'Twig', 'OOP', 'Functional Programming'],
+    date: 'Dec 2021',
+    name: 'ctrl-keys',
+    link: 'https://github.com/webNeat/ctrl-keys',
+    description: 'A tiny, super fast, Typescript library to handle keybindings efficiently.',
+    tools: ['Typescript', 'DOM'],
+  },
+  {
+    date: 'Sep 2019',
+    name: 'React Tidy',
+    link: 'https://github.com/webNeat/react-tidy',
+    description: 'A collection of handy, flexible, tested and documented React custom hooks.',
+    tools: ['Typescript', 'React'],
   },
   {
     date: 'Sep 2019',
@@ -132,35 +156,20 @@ export const projects = [
     tools: ['NodeJS', 'Adonis', 'MySQL', 'Postgres', 'Azure DevOps'],
   },
   {
-    date: 'Sep 2019',
-    name: 'React Tidy',
-    link: 'https://github.com/webNeat/react-tidy',
-    description: 'A collection of handy, flexible, tested and documented React custom hooks.',
-    tools: ['Typescript', 'React'],
-  },
-  {
-    date: 'Oct 2017',
-    name: 'Wajez API',
-    link: 'https://github.com/wajez/api',
+    date: 'Oct 2015',
+    name: 'Lumen Generators',
+    link: 'https://github.com/webNeat/lumen-generators',
     description:
-      'A library built on top of express and mongoose to make developing REST APIs using simple declarative code while being able to override any behavior.',
-    tools: [
-      'NodeJS',
-      'Express',
-      'Mongoose',
-      'Sanctuary',
-      'JWT',
-      'Mocha',
-      'Programmation Fonctionelle',
-    ],
+      'A collection of generators for Lumen and Laravel 5. Downloaded 124K+ times and used by 300+ open source project on Github.',
+    tools: ['PHP', 'Laravel', 'Lumen', 'Twig'],
   },
   {
-    date: 'Oct 2017',
-    name: 'Wajez API Test',
-    link: 'https://github.com/wajez/api-test',
-    description: 'A library that makes testing REST APIs easy and declarative.',
-    tools: ['NodeJS', 'Mongoose', 'Mocha', 'Chai'],
-    last: true,
+    date: 'Jul 2016',
+    name: 'Tarsana',
+    link: 'https://github.com/tarsana/specs',
+    description:
+      'An ecosystem in which developers can create and share cross-platform command lines applications using their favorite programming language.',
+    tools: ['PHP', 'Twig', 'OOP', 'Functional Programming'],
   },
 ]
 
