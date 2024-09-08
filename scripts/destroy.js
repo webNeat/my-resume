@@ -1,6 +1,5 @@
 /* eslint-disable unicorn/no-await-expression-member */
-import { $ } from 'zx'
-import { app, deploy, run, server } from 'hosty'
+import { app, destroy, run, server } from 'hosty'
 
 const [, , user] = process.argv
 if (!user) {
@@ -8,8 +7,8 @@ if (!user) {
   process.exit(1)
 }
 
-const repo = (await $`git config --get remote.origin.url`).stdout.trim()
-const branch = (await $`git rev-parse --abbrev-ref HEAD`).stdout.trim()
+const repo = `git@github.com:${process.env.GITHUB_REPOSITORY}.git`
+const branch = process.env.GITHUB_HEAD_REF
 
 let domain = 'webneat.me'
 if (branch !== 'main') domain = branch + '.' + domain

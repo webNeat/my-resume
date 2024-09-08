@@ -5,11 +5,8 @@ export default function Home(props: any) {
   return (
     <>
       <Head>
-        <title>Amine Ben hammou (webNeat)</title>
-        <meta
-          name="description"
-          content="I like to solve challenging problems using efficient algorithms and high quality code."
-        />
+        <title>Develop - Amine Ben hammou (webNeat)</title>
+        <meta name="description" content="This is the dev branch!" />
       </Head>
       <Resume {...props} />
     </>
