@@ -22,4 +22,4 @@ jobs:
       - name: Add VPS to known_hosts
         run: ssh-keyscan -H vps >> ~/.ssh/known_hosts
       - name: Destroy with Ansible
-        run: ANSIBLE_BECOME_PASS="${{ secrets.VPS_PASS }}" npm run destroy ${{ secrets.VPS_USER }}
+        run: ANSIBLE_BECOME_PASS="${{ secrets.VPS_PASS }}" npm run destroy ${{ secrets.VPS_USER }} ${{ github.ref }}

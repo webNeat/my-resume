@@ -1,14 +1,13 @@
 /* eslint-disable unicorn/no-await-expression-member */
 import { app, deploy, run, server } from 'hosty'
 
-const [, , user] = process.argv
-if (!user) {
-  console.log(`Error: missing argument\nSyntax: npm deploy <user>`)
+const [, , user, branch] = process.argv
+if (!user || !branch) {
+  console.log(`Error: missing argument\nSyntax: npm run deploy <user> <branch>`)
   process.exit(1)
 }
 
 const repo = `git@github.com:${process.env.GITHUB_REPOSITORY}.git`
-const branch = process.env.GITHUB_HEAD_REF
 
 let domain = 'webneat.me'
 if (branch !== 'main') domain = branch + '.' + domain
