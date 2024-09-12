@@ -14,7 +14,7 @@ const env = {
 }
 const application = app.git({ name: domain, domain, repo, branch, env })
 
-if (ci.event().type === 'delete') destroy(ci.server(), application)
+if (ci.event() === 'delete') destroy(ci.server(), application)
 else deploy(ci.server(), application)
 
 ci.run()
