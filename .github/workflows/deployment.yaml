@@ -24,4 +24,3 @@ jobs:
           ssh_private_key: ${{ secrets.VPS_SSH_KEY }}
           server_sudo_pass: ${{ secrets.VPS_PASS }}
           handler: deployment.js
-          verbose: true
