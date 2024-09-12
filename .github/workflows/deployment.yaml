@@ -12,32 +12,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Set up SSH
-        uses: webfactory/ssh-agent@v0.9.0
-        with:
-          ssh-private-key: ${{ secrets.VPS_SSH_KEY }}
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Install dependencies
-        run: npm i
-      - name: Add VPS to known_hosts
-        run: ssh-keyscan -H ${{ secrets.VPS_IP }} >> ~/.ssh/known_hosts
-      - name: Deploy to server
-        if: github.event_name != 'delete'
-        env:
-          VPS_IP: ${{ secrets.VPS_IP }}
-          VPS_USER: ${{ secrets.VPS_USER }}
-          ANSIBLE_BECOME_PASS: ${{ secrets.VPS_PASS }}
-          REPOSITORY: ${{ github.repository }}
-          BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
-        run: node deployment.js deploy
-      - name: Delete from server
-        if: github.event_name == 'delete'
-        env:
-          VPS_IP: ${{ secrets.VPS_IP }}
-          VPS_USER: ${{ secrets.VPS_USER }}
-          ANSIBLE_BECOME_PASS: ${{ secrets.VPS_PASS }}
-          REPOSITORY: ${{ github.repository }}
-          BRANCH_NAME: ${{ github.event.ref }}
-        run: node deployment.js destroy
+      - run: npm ci
+      - name: Deployment
+        uses: webNeat/hosty@main
+        with:
+          server_ip: ${{ secrets.VPS_IP }}
+          server_user: ${{ secrets.VPS_USER }}
+          ssh_private_key: ${{ secrets.VPS_SSH_KEY }}
+          server_sudo_pass: ${{ secrets.VPS_PASS }}
+          handler: deployment.js
