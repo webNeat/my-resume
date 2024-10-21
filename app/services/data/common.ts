@@ -27,7 +27,7 @@ export const tools = [
   { name: 'PubSub', level: 4 },
   { name: 'Git', level: 5 },
   { name: 'VSCode', level: 5 },
-  { child: true, name: 'Extension', level: 4 },
+  // { child: true, name: 'Extension', level: 4 },
   { name: 'Docker', level: 4 },
   { name: 'Ansible', level: 4 },
 ]
