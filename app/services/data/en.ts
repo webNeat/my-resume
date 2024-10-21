@@ -13,7 +13,7 @@ export const labels = {
 export const name = 'Amine Ben hammou'
 export const photo = '/profile.jpeg'
 export const quote =
-  'I am a software engineer with focus on web development and performance optimization'
+  'I am a software engineer with focus on web development, performance optimization and knowledge sharing'
 
 export const personalInfos = [
   { icon: 'fas fa-map-marker-alt', content: '64 rue de Migneaux 78300 Poissy France' },
@@ -32,14 +32,14 @@ export const schools = [
   {
     date: '2013 - 2015',
     location: 'Clermont-Ferrand, France',
-    name: 'Institut Supérieure d’Informatique, de Modélisation et de leurs Applications',
+    name: `Institut Supérieure d'Informatique, de Modélisation et de leurs Applications`,
     diploma: "Master's Degree in Software Engineering and Information Systems",
   },
   {
     last: true,
     date: '2011 - 2013',
     location: 'Rabat, Maroc',
-    name: 'Ecole Nationale Supérieure d’Informatique et Analyse des Systèmes',
+    name: `Ecole Nationale Supérieure d'Informatique et Analyse des Systèmes`,
     diploma: "Master's Degree in Comupter Science",
   },
 ]
@@ -54,7 +54,7 @@ export const jobs = [
     description: [
       `I worked as a backend engineer on desiging, developing and maintaining multiple microservices on a Google Cloud environment. My tasks included: analyzing and solving performance issues, implementing cache system using Redis, creating and documenting internal tools library, doing code reviews and sharing knowledge with the team via presentations`,
     ],
-    tools: ['Typescript', 'NodeJS', 'Postgres', 'Redis', 'PubSub', 'Gitlab', 'Scrum'],
+    tools: ['Typescript', 'NodeJS', 'Postgres', 'MongoDB', 'Redis', 'PubSub', 'Gitlab', 'Scrum'],
   },
   {
     date: 'Nov 2020 - Oct 2021',
@@ -94,23 +94,15 @@ export const jobs = [
     link: 'https://home.cern/',
     logo: 'https://framework.web.cern.ch/framework/1.0/img/logo/badge_80.png',
     description: '',
-    tools: ['AngularJS', 'Django', 'Gulp', 'Bower', 'Jade/Pug', 'Less'],
+    tools: [],
+    // tools: ['AngularJS', 'Django', 'Gulp', 'Bower', 'Jade/Pug', 'Less'],
   },
 ]
 
 export const skills = [
   {
     description: 'Development, test and deployment of web applications.',
-    tools: [
-      'Typescript',
-      'NodeJS',
-      'React',
-      'TailwindCSS',
-      'Postgres',
-      'Redis',
-      'Docker',
-      'Ansible',
-    ],
+    tools: ['Typescript', 'NodeJS', 'React', 'Postgres', 'MongoDB', 'Redis', 'Docker', 'Ansible'],
   },
   {
     description: 'Solving challenging technical problems and designing efficient algorithms.',
@@ -125,6 +117,13 @@ export const skills = [
 ]
 
 export const projects = [
+  {
+    date: 'Sep 2024',
+    name: 'hosty',
+    link: 'https://github.com/webNeat/hosty',
+    description: `A code based opinionated way to self-host and manage web apps.`,
+    tools: ['Typescript', 'Ansible', 'Docker', 'Github Actions', 'Caddy'],
+  },
   {
     date: 'Jun 2023',
     name: 'ts-perf',
@@ -142,7 +141,7 @@ export const projects = [
   },
   {
     date: 'Sep 2019',
-    name: 'React Tidy',
+    name: 'react-tidy',
     link: 'https://github.com/webNeat/react-tidy',
     description: 'A collection of handy, flexible, tested and documented React custom hooks.',
     tools: ['Typescript', 'React'],
@@ -152,7 +151,7 @@ export const projects = [
     name: 'Mahkamaty - Backend lead developer',
     link: 'https://mahkamaty.com/fr-ma/about-us',
     description:
-      'Mahkamaty is Stackoverflow for legal issues and questions; answers come from legal experts in the specific law field.',
+      'Mahkamaty is Stackoverflow for legal issues and questions; answers come from legal experts in the law field.',
     tools: ['NodeJS', 'Adonis', 'MySQL', 'Postgres', 'Azure DevOps'],
   },
   {
@@ -160,7 +159,7 @@ export const projects = [
     name: 'Lumen Generators',
     link: 'https://github.com/webNeat/lumen-generators',
     description:
-      'A collection of generators for Lumen and Laravel 5. Downloaded 124K+ times and used by 300+ open source project on Github.',
+      'A collection of generators for Lumen and Laravel 5. 190K+ installs, 350+ stars on Github.',
     tools: ['PHP', 'Laravel', 'Lumen', 'Twig'],
   },
   {
@@ -168,7 +167,7 @@ export const projects = [
     name: 'Tarsana',
     link: 'https://github.com/tarsana/specs',
     description:
-      'An ecosystem in which developers can create and share cross-platform command lines applications using their favorite programming language.',
+      'An ecosystem in which developers can create and share cross-platform command line applications.',
     tools: ['PHP', 'Twig', 'OOP', 'Functional Programming'],
   },
 ]

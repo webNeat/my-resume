@@ -13,17 +13,22 @@ export const labels = {
 export const name = 'Amine Ben hammou'
 export const photo = '/profile.jpeg'
 export const quote =
-  "J'aime résoudre des problèmes difficiles en implémentant des algorithmes efficaces avec du code bien organisé."
+  'Ingénieur spécialisé en développement web, optimisation de performance et partage de connaissance'
 
 export const personalInfos = [
   {
     icon: 'fas fa-user-tie',
-    content: '31 ans, célibataire',
+    content: '34 ans, célibataire',
   },
   { icon: 'fas fa-map-marker-alt', content: '64 rue de Migneaux 78300 Poissy' },
   { icon: 'fas fa-phone-alt', content: '(+33) 7 55 18 34 70', link: 'tel:+33755183470' },
   { icon: 'fas fa-at', content: 'webneat@gmail.com', link: 'mailto:webneat@gmail.com' },
   { icon: 'fab fa-github', content: 'github.com/webneat', link: 'https://github.com/webneat' },
+  {
+    icon: 'fas fa-laptop',
+    content: 'codementor.io/@webneat',
+    link: 'https://www.codementor.io/@webneat',
+  },
 ]
 
 export const languages = [
@@ -56,9 +61,9 @@ export const jobs = [
     link: 'https://monoprix.fr/',
     logo: '/logos/monoprix.png',
     description: [
-      `Conception, développement et maintenance de plusieurs microservices sur un environnement Google Cloud. Mes tâches incluent: analyser et résoudre les problèmes de performance, implémenter un système de cache avec Redis, créer et documenter une bibliothèque d'outils internes, faire des revues de code et partager des connaissances avec l'équipe via des articles et des présentations.`,
+      `Conception, développement et maintenance de plusieurs microservices sur un environnement Google Cloud. Mes tâches incluent: analyser et résoudre les problèmes de performance sur des flux d'import/export ou des requêtes de base de données, implémenter un système de cache avec Redis, créer et documenter une library interne en Typescript, faire des revues de code et partages de connaissances via des articles et des présentations.`,
     ],
-    tools: ['Typescript', 'NodeJS', 'Postgres', 'Redis', 'PubSub', 'Gitlab', 'Scrum'],
+    tools: ['Typescript', 'NodeJS', 'Postgres', 'Redis', 'MongoDB', 'PubSub', 'Gitlab'],
   },
   {
     date: 'Nov 2020 - Oct 2021',
@@ -66,7 +71,7 @@ export const jobs = [
     company: 'Datadog',
     link: 'https://www.datadoghq.com/',
     logo: '/logos/datadog.png',
-    description: `Développement et maintenance du browser SDK dans l'équipe RUM (Real User Monitoring). Ce SDK open source enregistre les sessions des utilisateurs (navigation, clics, ressources, erreurs, ...) et les rapporte à Datadog. Les clients peuvent ensuite utiliser leurs tableaux de bord pour explorer et analyser la façon dont les utilisateurs utilisent leurs sites, pour enquêter et résoudre les erreurs et les problèmes de performances.`,
+    description: `Développement et maintenance du browser SDK dans l'équipe RUM (Real User Monitoring). Ce SDK open source enregistre les sessions des utilisateurs et les rapporte à Datadog. Les clients peuvent ensuite explorer et analyser la façon dont les utilisateurs utilisent leurs sites, pour investiguer et résoudre les erreurs et les problèmes de performances.`,
     tools: ['Typescript', 'NodeJS', 'DOM', 'ESLint', 'Gitlab', 'Kanban', 'OKR'],
   },
   {
@@ -103,16 +108,7 @@ export const jobs = [
 export const skills = [
   {
     description: 'Conception, dévelopement, test et deploiment des applications web.',
-    tools: [
-      'NodeJS',
-      'React',
-      'Redux',
-      'TailwindCSS',
-      'Postgres',
-      'MongoDB',
-      'Docker',
-      'Azure DevOps',
-    ],
+    tools: ['Typescript', 'NodeJS', 'React', 'Postgres', 'MongoDB', 'Redis', 'Docker', 'Ansible'],
   },
   {
     description: "Résolution des challenges d'implémentation et optimisation des algorithmes.",
@@ -135,6 +131,13 @@ export const projects = [
     tools: ['NodeJS', 'Adonis', 'MySQL', 'Postgres', 'Azure DevOps'],
   },
   {
+    date: 'Sep 2024',
+    name: 'hosty',
+    link: 'https://github.com/webNeat/hosty',
+    description: `Outil d'automatisation de deploiment et gestions des applications dans un serveur linux avec du code Typescript basé sur Ansible et Docker`,
+    tools: ['Typescript', 'Ansible', 'Docker', 'Github Actions', 'Caddy'],
+  },
+  {
     date: 'Jun 2023',
     name: 'ts-perf',
     link: 'https://github.com/webNeat/ts-perf',
@@ -151,15 +154,8 @@ export const projects = [
     tools: ['Typescript', 'DOM'],
   },
   {
-    date: 'Nov 2021',
-    name: 'just-types',
-    link: 'https://github.com/webNeat/just-types',
-    description: 'Une collection de types génériques utiles pour Typescript.',
-    tools: ['Typescript'],
-  },
-  {
     date: 'Septembre 2019',
-    name: 'React Tidy',
+    name: 'react-tidy',
     link: 'https://github.com/webNeat/react-tidy',
     description: 'Une collection de React Hooks qui sont flexibles, testés, et bien documentés.',
     tools: ['Typescript', 'React'],
@@ -176,7 +172,7 @@ export const projects = [
     name: 'Lumen Generators',
     link: 'https://github.com/webNeat/lumen-generators',
     description:
-      'Un outil de génération du code avancé pour les framework Laravel et Lumen. Installé plus de 124K fois et utilisé par plus de 300 projets sur Github.',
+      'Un outil de génération du code avancé pour les framework Laravel et Lumen. 190K installs, 350+ stars sur Github.',
     tools: ['PHP', 'Laravel', 'Lumen', 'Twig'],
     last: true,
   },

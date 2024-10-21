@@ -8,7 +8,7 @@ export default function Home(props: any) {
         <title>Amine Ben hammou (webNeat)</title>
         <meta
           name="description"
-          content="I like to solve challenging problems using efficient algorithms and high quality code."
+          content="I am a software engineer with focus on web development and performance optimization."
         />
       </Head>
       <Resume {...props} />
