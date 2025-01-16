@@ -24,8 +24,8 @@ export const personalInfos = [
 
 export const languages = [
   { name: 'Arabic', level: 5 },
-  { name: 'English', level: 4 },
-  { name: 'French', level: 4 },
+  { name: 'English', level: 5 },
+  { name: 'French', level: 5 },
 ]
 
 export const schools = [
@@ -46,7 +46,7 @@ export const schools = [
 
 export const jobs = [
   {
-    date: 'Nov 2021 - Present',
+    date: 'Nov 2021 - Dec 2024',
     location: 'Remote, France',
     company: 'Monoprix Online',
     link: 'https://monoprix.fr/',
