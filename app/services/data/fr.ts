@@ -33,8 +33,8 @@ export const personalInfos = [
 
 export const languages = [
   { name: 'Arabe', level: 5 },
-  { name: 'Français', level: 4 },
-  { name: 'Anglais', level: 4 },
+  { name: 'Français', level: 5 },
+  { name: 'Anglais', level: 5 },
 ]
 
 export const schools = [
@@ -55,7 +55,7 @@ export const schools = [
 
 export const jobs = [
   {
-    date: 'Nov 2021 - Present',
+    date: 'Nov 2021 - Dec 2024',
     location: 'Remote, France',
     company: 'Monoprix Online',
     link: 'https://monoprix.fr/',
@@ -111,8 +111,9 @@ export const skills = [
     tools: ['Typescript', 'NodeJS', 'React', 'Postgres', 'MongoDB', 'Redis', 'Docker', 'Ansible'],
   },
   {
-    description: "Résolution des challenges d'implémentation et optimisation des algorithmes.",
-    tools: ['Algorithmique', 'Math', 'Structures de données', `Techniques d'optimisation`],
+    description:
+      "Résolution des challenges d'implémentation et optimisation des algorithmes et des requêtes de bases de données.",
+    tools: ['Algorithmique', 'Math', 'Structures de données', `Techniques d'optimisation`, 'SQL'],
   },
   {
     last: true,
@@ -131,10 +132,17 @@ export const projects = [
     tools: ['NodeJS', 'Adonis', 'MySQL', 'Postgres', 'Azure DevOps'],
   },
   {
+    date: 'Dec 2024',
+    name: 'aifn',
+    link: 'https://github.com/webNeat/aifn',
+    description: `Une bibliothèque pour créer des fonctions Typescript en utilisant des modèles d'intelligence artificielle.`,
+    tools: ['Typescript', 'Zod', 'OpenAI', 'Anthropic', 'Ollama', 'Gemini'],
+  },
+  {
     date: 'Sep 2024',
     name: 'hosty',
     link: 'https://github.com/webNeat/hosty',
-    description: `Outil d'automatisation de deploiment et gestions des applications dans un serveur linux avec du code Typescript basé sur Ansible et Docker`,
+    description: `Un outil d'automatisation de deploiment et gestions des applications dans un serveur linux avec du code Typescript basé sur Ansible et Docker`,
     tools: ['Typescript', 'Ansible', 'Docker', 'Github Actions', 'Caddy'],
   },
   {
@@ -161,21 +169,30 @@ export const projects = [
     tools: ['Typescript', 'React'],
   },
   {
-    date: 'Juillet 2016',
-    name: 'Tarsana',
-    link: 'https://github.com/tarsana',
-    description:
-      'Un ecosystème qui permet aux dévelopeurs de construire et partager des applications console.',
-  },
-  {
-    date: 'Octobre 2015',
-    name: 'Lumen Generators',
-    link: 'https://github.com/webNeat/lumen-generators',
-    description:
-      'Un outil de génération du code avancé pour les framework Laravel et Lumen. 190K installs, 350+ stars sur Github.',
-    tools: ['PHP', 'Laravel', 'Lumen', 'Twig'],
+    date: '2025',
+    name: 'Plusieurs autres projets open source sur Github',
+    link: 'https://github.com/webNeat',
+    description: '',
     last: true,
   },
+  // {
+  //   date: 'Juillet 2016',
+  //   name: 'Tarsana',
+  //   link: 'https://github.com/tarsana',
+  //   description:
+  //     'Un ecosystème qui permet aux dévelopeurs de construire et partager des applications console.',
+  //   tools: ['Typescript', 'React', 'Github Actions'],
+  //   last: true,
+  // },
+  // {
+  //   date: 'Octobre 2015',
+  //   name: 'Lumen Generators',
+  //   link: 'https://github.com/webNeat/lumen-generators',
+  //   description:
+  //     'Un outil de génération du code avancé pour les framework Laravel et Lumen. 190K installs, 350+ stars sur Github.',
+  //   tools: ['PHP', 'Laravel', 'Lumen', 'Twig'],
+  //   last: true,
+  // },
 ]
 
 export const note = {
