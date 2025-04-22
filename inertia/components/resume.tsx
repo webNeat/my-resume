@@ -22,13 +22,16 @@ export const Resume = (data: any) => {
 
           <SideTitle>{data.labels.tools}</SideTitle>
           {data.tools.map((x: any) => (
-            <Tool key={x.name} {...x} />
+            <div key={x.name} className="text-left text-md border-b-1 border-b-gray-300 pb-2">
+              <p className="font-semibold mt-2">{x.name}</p>
+              <p className="mt-1">{x.items.join(' - ')}</p>
+            </div>
           ))}
 
           <SideTitle>{data.labels.languages}</SideTitle>
-          {data.languages.map((x: any) => (
-            <Tool key={x.name} {...x} />
-          ))}
+          <div className="text-left text-md border-b-1 border-b-gray-300 pb-2">
+            <p className="mt-2">{data.languages.map((x: any) => x.name).join(' - ')}</p>
+          </div>
         </div>
 
         <div className="w-3/4 flex-grow border-l p-10">

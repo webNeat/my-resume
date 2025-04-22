@@ -124,36 +124,6 @@ export const skills = [
 
 export const projects = [
   {
-    date: 'Septembre 2017',
-    name: 'Mahkamaty - Backend lead developer',
-    link: 'https://mahkamaty.com/fr-ma/about-us',
-    description:
-      "Mahkamaty vise la démocratisation de l'accès à l'information juridique, en facilitant le processus de demandes de consultations et en fournissant une expertise pour apporter des réponses rapides.",
-    tools: ['NodeJS', 'Adonis', 'MySQL', 'Postgres', 'Azure DevOps'],
-  },
-  {
-    date: 'Dec 2024',
-    name: 'aifn',
-    link: 'https://github.com/webNeat/aifn',
-    description: `Une bibliothèque pour créer des fonctions Typescript en utilisant des modèles d'intelligence artificielle.`,
-    tools: ['Typescript', 'Zod', 'OpenAI', 'Anthropic', 'Ollama', 'Gemini'],
-  },
-  {
-    date: 'Sep 2024',
-    name: 'hosty',
-    link: 'https://github.com/webNeat/hosty',
-    description: `Un outil d'automatisation de deploiment et gestions des applications dans un serveur linux avec du code Typescript basé sur Ansible et Docker`,
-    tools: ['Typescript', 'Ansible', 'Docker', 'Github Actions', 'Caddy'],
-  },
-  {
-    date: 'Jun 2023',
-    name: 'ts-perf',
-    link: 'https://github.com/webNeat/ts-perf',
-    description:
-      'Une bibliothèque et une commande pour mesurer la performance de compilation du code Typescript.',
-    tools: ['Typescript'],
-  },
-  {
     date: 'Dec 2021',
     name: 'ctrl-keys',
     link: 'https://github.com/webNeat/ctrl-keys',
@@ -169,12 +139,49 @@ export const projects = [
     tools: ['Typescript', 'React'],
   },
   {
+    date: 'Fevrier 2019',
+    name: 'react-dye',
+    link: 'https://github.com/webNeat/react-dye',
+    description: 'Un moyen simple et flexible pour "styler" les composants React.',
+    tools: ['Typescript', 'React', 'TailwindCSS'],
+  },
+  {
+    date: 'Sep 2024',
+    name: 'hosty',
+    link: 'https://github.com/webNeat/hosty',
+    description: `Un outil d'automatisation de deploiment et gestions des applications dans un serveur linux avec du code Typescript basé sur Ansible et Docker`,
+    tools: ['Typescript', 'Ansible', 'Docker', 'Github Actions', 'Caddy'],
+  },
+  {
+    date: 'Dec 2024',
+    name: 'aifn',
+    link: 'https://github.com/webNeat/aifn',
+    description: `Une bibliothèque pour créer des fonctions Typescript en utilisant des modèles d'intelligence artificielle.`,
+    tools: ['Typescript', 'Zod', 'OpenAI', 'Anthropic', 'Ollama', 'Gemini'],
+  },
+  {
+    date: 'Jun 2023',
+    name: 'ts-perf',
+    link: 'https://github.com/webNeat/ts-perf',
+    description:
+      'Une bibliothèque et une commande pour mesurer la performance de compilation du code Typescript.',
+    tools: ['Typescript'],
+  },
+  {
     date: '2025',
     name: 'Plusieurs autres projets open source sur Github',
     link: 'https://github.com/webNeat',
     description: '',
     last: true,
   },
+  // {
+  //   date: 'Septembre 2017',
+  //   name: 'Mahkamaty - Backend lead developer',
+  //   link: 'https://mahkamaty.com/fr-ma/about-us',
+  //   description:
+  //     "Mahkamaty vise la démocratisation de l'accès à l'information juridique, en facilitant le processus de demandes de consultations et en fournissant une expertise pour apporter des réponses rapides.",
+  //   tools: ['NodeJS', 'Adonis', 'MySQL', 'Postgres', 'Azure DevOps'],
+  // },
   // {
   //   date: 'Juillet 2016',
   //   name: 'Tarsana',
